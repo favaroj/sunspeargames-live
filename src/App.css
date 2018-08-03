@@ -1,0 +1,1067 @@
+.App {
+    text-align: center;
+}
+
+html,
+body {
+    font-size: 16px !important;
+    color: #6b6b6b !important;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "robotoregular";
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   =================================PRELOADER===================================
+   ========================================================================== 
+*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.loaded {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(./Assets/img/preloading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+/* ==========================================================================
+   =================================NAVBAR===================================
+   ========================================================================== 
+*/
+
+#navbar-logo {
+    /* margin-left: 10px;
+    margin-top: 5px; */
+    height: 40px;
+    width: 40px;
+}
+
+#navbar-style {
+    position: "fixed";
+    width: "100%";
+    z-index: 1000;
+    font-size: 20px;
+    background-color: white;
+    opacity: 0.8;
+    box-shadow: 0 4px 2px -2px lightgrey;
+}
+
+#nav-item {
+    /* font-weight: bold; */
+    color: black;
+}
+
+#nav-item:hover {
+    color: red;
+}
+
+/* ==========================================================================
+   =================================BANNER===================================
+   ========================================================================== 
+*/
+
+/* .banner-container {
+  width: 100%;
+  padding:110px 0 40px 0;
+} */
+
+.banner-container {
+    width: 100%;
+    height: 370px;
+    padding: 110px 0 40px 0;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    background-image: url("./Assets/img/minified/banner.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 901px) {
+    .banner {
+        background-image: url("./Assets/img/header-resize.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .banner-container {
+        height: 600px;
+        padding: 74px 0 40px 0;
+    }
+}
+
+@media only screen and (min-width: 902) {
+    .banner {
+        background-image: url("./Assets/img/banner.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .banner-container {
+        height: 370px;
+        padding: 100px 0 40px 0;
+    }
+}
+
+.whiteback {
+    background-color: white;
+    color: #525252;
+}
+
+/* ==========================================================================
+   =================================IMAGES===================================
+   ========================================================================== 
+*/
+
+.arash-img {
+    width: 75%;
+    /* margin-right: 17.5%; */
+}
+
+#bloodbound-img {
+    width: 80%;
+}
+
+.imgflip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    max-width: 100%;
+    height: auto!important;
+}
+
+/* ==========================================================================
+   =================================HOME=====================================
+   ========================================================================== 
+*/
+
+/* .home-wrap h1, */
+
+.home-wrap h2,
+.home-wrap h3,
+.home-wrap h4,
+.home-wrap h5,
+.home-wrap p {
+    color: #ffffff;
+    /*font-family: 'roboto', sans-serif;*/
+}
+
+.home-overlay-fluid {
+    background-color: rgba(41, 41, 41, 0.68);
+    width: 80%;
+    margin: auto;
+}
+
+.home-main-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3a393f;
+    /* slightly visible only when we resize this element */
+    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); */
+    z-index: 1;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.home-content {
+    z-index: 120;
+    top: 300px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Raleway Webfont";
+    letter-spacing: 12px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+    background-color: rgba(19, 33, 56, 0.4);
+}
+
+.home-content h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: 550;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: 550;
+}
+
+.home-content p {
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+}
+
+.home-main-content.move-out {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+.no-js .home-main-content {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .home-content h2 {
+        font-size: 1.3em;
+    }
+}
+
+.anti-shadow {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* ==========================================================================
+   =================================ABOUT US=================================
+   ========================================================================== 
+*/
+
+.about-content {
+    margin-top: 20px;
+}
+
+.about-content h4 {
+    font-size: 18px;
+    font-family: "robotobold";
+}
+
+.about-content a {
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   =================================LEARN MORE=================================
+   ========================================================================== 
+*/
+
+.learn-more {
+    background: url(./Assets/img/city.jpg) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.learn-dot {
+    /* height: 90%;
+width: 90%;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block; */
+}
+
+.dot-div {
+    padding: 10px;
+    margin: 20px;
+    /* background-image: `url(${CircleImage})`; */
+    border-radius: 50%;
+    /* width: 18.5em; */
+    /* height: 18.5em; */
+    color: white;
+    background-color:rgba(58,29,34, 2.9);
+    /* background-color: #85b4ff; */
+    opacity: .8;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    /* padding: 50% 0; */
+    border-radius: 50%;
+    line-height: 0;
+    text-align: center;
+    opacity: .8!important;
+    animation-fill-mode: none!important;
+    /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+background: #85b4ff;
+overflow: hidden; */
+}
+
+#dot-div-animation {
+    opacity: .8!important;
+}
+
+.dot-div:hover {
+    background: white;
+    cursor: pointer;
+    color: red;
+}
+
+.dot-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.dot-sizer {
+    opacity: 0;
+    width: 100%;
+}
+
+.dot-container {
+    position: relative;
+}
+
+.padding15 {
+    padding: 15px
+}
+
+.dot-container-padding {
+    padding: 250px, 0px;
+}
+
+/* ==========================================================================
+   =================================SECTIONS=================================
+   ========================================================================== 
+*/
+
+.sections {
+    padding: 300px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionsContact {
+    padding: 50px 0 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sections2 {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.sections3 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sections4 {
+    padding-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sections-quotes {
+    padding: 350px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section .subtitle h5 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: "roboto", sans-serif;
+}
+
+section .title-half h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 300;
+    margin-bottom: 1.4rem;
+}
+
+section .subtitle-half h5 {
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/* ========================================================================
+   =================================EXPERIENCE=============================
+   ======================================================================== 
+*/
+
+.experience {
+    background: url(./Assets/img/minified/city-scaled-min.jpg) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.experience-wrapper {}
+
+.experience-content {
+    background: rgba(65, 29, 37, 0.8);
+    padding: 40px;
+    color: #fff;
+}
+
+.experience-content h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Raleway Webfont";
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.experience-content h5 {
+    font-family: "Raleway Webfont";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.experience-content h6 {
+    color: #ecf0f2;
+    margin-top: 6px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 12%;
+    margin-left: 12%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 180%;
+}
+
+.experience-content p {
+    font-weight: 300;
+    color: #ecf0f2;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.experience-content .content-details.content-border {
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+/* ========================================================================
+   =================================CONTACT================================
+   ======================================================================== 
+*/
+
+.contact {
+    background: url(./Assets/img//minified/contact2-scaled.png) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-title {
+    padding: 20px;
+    color: #fff;
+}
+
+.contact-area {
+    background: rgba(55, 38, 57, 0.64);
+    padding: 60px 22% 147px 22%;
+    color: #fff;
+}
+
+.contact-wrapper h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: "Raleway Webfont";
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.form-control {
+    border: 1px solid #c3bec2;
+    font-size: 16px;
+    height: 50px;
+    background: transparent !important;
+    border-radius: 0;
+    margin-bottom: 30px;
+    color: white !important;
+}
+
+#form-group-message {
+    height: 15%;
+}
+
+.form-control {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #fff;
+}
+
+#formSubmitBtn {
+    color: white !important;
+}
+
+.contact-area form a {
+    float: right;
+    margin-top: 20px;
+}
+
+.contact-details {
+    background: rgba(55, 38, 57, 0.64);
+    padding: 60px 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-details h4 {
+    margin-bottom: 25px;
+}
+
+.contact-details p {
+    margin: 0 0 10px;
+    color: #c3bec2;
+}
+
+/* ========================================================================
+   =================================FOOTER================================
+   ======================================================================== 
+*/
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+    background: #222222;
+}
+
+.main-footer .social {
+    margin-bottom: 10px;
+}
+
+.main-footer .social a {
+    color: #c3bec2;
+    font-size: 15px;
+}
+
+.main-footer .social a:hover {
+    color: #ff2b4a;
+}
+
+.main-footer .social a i {
+    border-right: 1px solid #c3bec2;
+    padding: 0 10px 0 10px;
+}
+
+.main-footer .social a i.end {
+    border-right: 0;
+}
+
+.main-footer p {
+    color: #c3bec2;
+    font-size: 12px;
+}
+
+/* ========================================================================
+   =================================OVERLAY================================
+   ======================================================================== 
+*/
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    width: 100%;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+.overlay-fluid-block {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.overlay-img {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #ffffff;
+}
+
+/* ========================================================================
+   =================================LIST STYLE=============================
+   ========================================================================
+*/
+
+.txt-ul {
+    list-style: none;
+    margin: 0 0 20px;
+    padding-left: 17px;
+}
+
+.txt-ul li:before {
+    color: #f00;
+    content: "» \0000a0";
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+/* ========================================================================
+   =================================MEDIA QUERIES============================
+   ========================================================================== 
+*/
+
+@media (max-width: 768px) {
+    #h1-responsive {
+        font-size: 1.8em;
+    }
+    .experience-content h5 {
+        font-size: 1.2em;
+    }
+    .experience-content h6 {
+        font-size: 0.9em;
+    }
+    .experience-content {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .contact-area {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #about-info-container {
+        padding: 0;
+    }
+    .railway-caps {
+        font-size: 2rem !important;
+    }
+    .about-content {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 0px;
+    }
+    .dot-div {
+        width: 9.6em;
+        height: 9.5em;
+        opacity: .8!important;
+    animation-fill-mode: none!important;
+    }
+    .dot-text {
+        font-size: 1.3em;
+    }
+    .react-parallax-bgimage-header {
+        /* padding-top: 5px; */
+       max-height: 60%!important;
+        
+    }
+    img {
+        height: 100%!important;
+    }
+    .sections3 {
+        /* padding-top: 0px; */
+        max-height: 60%!important;
+    }
+    .sections {
+         padding-bottom: 120px; 
+    }
+    #contact-image {
+        height: auto!important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .dot-div {
+        width: 18.5em!important;
+        height: 18.5em!important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .dot-div {
+    width: 18.5em!important;
+    height: 18.5em!important;
+}
+} 
+
+/* ========================================================================
+   =================================MISCELLANEOUS============================
+   ========================================================================== 
+*/
+
+.set-zindex-top {
+    z-index: 555;
+}
+
+.darkback {
+    background-color: #1a2328;
+    color: white;
+}
+
+.whitetxt {
+    color: white;
+}
+
+.railway-caps {
+    font-family: "Raleway Webfont";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #ff2b4a;
+    border-color: transparent;
+    border-radius: 0;
+    padding: 10px 60px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-default:active,
+.btn-default:hover {
+    background: #002453;
+    color: #fff;
+}
+
+h1 span {
+    color: #f56363;
+    font-weight: 400;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+a:hover {
+    color: red !important;
+}
+
+a.link.active {
+    color: red !important;
+}
+
+.row {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+h1,
+h2,
+h3 {
+    /*font-family: 'Lane', sans-serif;*/
+    font-weight: 300;
+    margin: 0;
+    color: #525252;
+}
+
+h4,
+h5 {
+    /*font-family: 'roboto', sans-serif;*/
+    font-weight: 300;
+    margin: 0;
+    line-height: 2rem;
+    color: #525252;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 0.9rem;
+}
+
+h3 {
+    font-weight: 300;
+    margin-bottom: 0.9rem;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.8rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+p {
+    margin: 0 0 17px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    outline: none;
+}
+
+/* ========================================================================
+   ===========================EXTRA HEIGHT STYLE===========================
+   ======================================================================== 
+*/
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.margin-bottom-80 {
+    margin-bottom: 80px;
+}
+
+.padding-top-20 {
+    padding-top: 1.33rem;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 1.33rem;
+}
+
+.padding-top-40 {
+    padding-top: 2.66rem;
+}
+
+.padding-bottom-40 {
+    padding-bottom: 2.66rem;
+}
+
+.padding-top-60 {
+    padding-top: 5rem;
+}
+
+.padding-bottom-60 {
+    padding-bottom: 5rem;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+/* ========================================================================
+   ==========================EXTRA PADDING STYLE===========================
+   ========================================================================
+*/
+
+.padding-twenty {
+    padding: 10px 0;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+.padding-fourty {
+    padding: 20px 0;
+}
+
+.padding-sixty {
+    padding: 30px 0;
+}
+
+.padding-eighty {
+    padding: 40px 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+/* ==========================================================================
+   =================================PARALLAX=================================
+   ========================================================================== 
+*/
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.parallax-window-talmetra {
+    min-height: 400px;
+    background: transparent;
+    background: url(./Assets/img/splash-talmetra-celebrate.jpg) no-repeat center top fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-section {
+    max-width: 100%;
+    color: #ffffff;
+}
+
+/*For Home Section*/
+
+.parallax-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+}
