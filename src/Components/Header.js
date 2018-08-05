@@ -4,7 +4,8 @@ import HeaderImage from "./../Assets/img/minified/header-bg-scaled-min.jpg";
 import "./../App.css";
 import "./../Assets/js/scroll.js";
 import {Parallax, Background} from 'react-parallax';
-import Zoom from 'react-reveal/Zoom';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 export default class Header extends Component {
   constructor() {
@@ -46,14 +47,14 @@ export default class Header extends Component {
                     <div className="set-zindex-top">
                       <div className="col-md-12">
                         <div className="home-content">
-                        <Zoom>
+                        <ScrollAnimation animateIn="fadeIn">
                           <h2 className="set-zindex-top ">
                             {this.props.h2Text}
                           </h2>
                           <h1 className="set-zindex-top " id="h1-responsive">
                             {this.props.h1Text}
                           </h1>
-                          </Zoom>
+                          </ScrollAnimation>
                         </div>
                       </div>
                     </div>
@@ -63,7 +64,7 @@ export default class Header extends Component {
             </Parallax>
           : <Parallax
             bgImage={HeaderImage}
-            strength={100}
+            strength={50}
             className="react-parallax-bgimage-header">
             <div className="anti-shadow react-parallax-bgimage-header">
               <div className="sections set-zindex-top">
@@ -71,12 +72,14 @@ export default class Header extends Component {
                   <div className="set-zindex-top">
                     <div className="col-md-12">
                       <div className="home-content">
+                      {/* <ScrollAnimation animateIn="fadeIn"> */}
                         <h2 className="set-zindex-top ">
                           {this.props.h2Text}
                         </h2>
                         <h1 className="set-zindex-top " id="h1-responsive">
                           {this.props.h1Text}
                         </h1>
+                        {/* </ScrollAnimation> */}
                       </div>
                     </div>
                   </div>

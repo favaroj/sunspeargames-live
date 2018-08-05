@@ -10,8 +10,11 @@ import NavBar from "./../Components/NavBar";
 import Header from "./../Components/Header";
 import Banner from "./../Components/Banner";
 import Footer from "./../Components/Footer";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 //import {Parallax, Background} from 'react-parallax';
 import Roll from 'react-reveal';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import { Parallax } from 'react-spring'
 //import CircleImage from "./Assets/img/circle.png";
 //import "jquery-parallax.js";
@@ -97,22 +100,29 @@ class Home extends Component {
 
   
         <section id="index-learn-more" className="learn-more">
-          <div className="overlay sections-quotes anti-shadow ">
-            <Roll >
-            <div className="dot-div" left>
-              <p className="dot-text">TEAM</p>
-            </div>
-            </Roll>
-            <Roll left>
-            <div className="dot-div">
-              <p className="dot-text">IMMORTAL</p>
-            </div>
-            </Roll>
-            <Roll left id="dot-div-animation">
-            <div className="dot-div">
-              <p className="dot-text">CONSULTING</p>
-            </div>
-            </Roll>
+          <div className="overlay sections-quotes anti-shadow">
+          <ScrollAnimation animateIn="bounceInRight">
+            <Link to="/Team">
+              <div className="dot-div">
+                <p className="dot-text">TEAM</p>
+              </div>
+            </Link>
+            </ScrollAnimation>
+    
+            <ScrollAnimation animateIn="bounceInRight">
+            <Link to="/Immortal">
+              <div className="dot-div">
+                <p className="dot-text">IMMORTAL</p>
+              </div>
+            </Link>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="bounceInRight">
+            <Link to="/Immortal">
+              <div className="dot-div">
+                <p className="dot-text">CONSULTING</p>
+              </div>
+            </Link>
+            </ScrollAnimation>
             {/*<div className="row">
               <div className="fluid-container margin-top-30 dot-container">
                 <div className="dot-div">

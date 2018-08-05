@@ -4,7 +4,8 @@ import SplashRootWitchImage from "./../Assets/img/minified/splash-rootwitch-scal
 import "./../App.css";
 import "./../Assets/js/scroll.js";
 import {Parallax, Background} from 'react-parallax';
-import Zoom from 'react-reveal/Zoom';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 export default class SplashRootWitch extends Component {
 	constructor() {
@@ -42,12 +43,12 @@ export default class SplashRootWitch extends Component {
 										<div className="set-zindex-top">
 											<div className="col-md-12">
 												<div className="home-content">
-													<Zoom>
-														<h2 className="set-zindex-top">PROJECT:</h2>
+													<ScrollAnimation animateIn="fadeIn">
+														<h2 className="set-zindex-top">{this.props.h2Text}</h2>
 														<h1 className="set-zindex-top" id="h1-responsive">
-															IMMORTAL
+															{this.props.h1Text}
 														</h1>
-													</Zoom>
+													</ScrollAnimation>
 												</div>
 											</div>
 										</div>
@@ -62,10 +63,12 @@ export default class SplashRootWitch extends Component {
 									<div className="set-zindex-top">
 										<div className="col-md-12">
 											<div className="home-content">
-												<h2 className="set-zindex-top">PROJECT:</h2>
+											<ScrollAnimation animateIn="fadeIn">
+												<h2 className="set-zindex-top">{this.props.h2Text}</h2>
 												<h1 className="set-zindex-top" id="h1-responsive">
-													IMMORTAL
+												{this.props.h1Text}
 												</h1>
+												</ScrollAnimation>
 											</div>
 										</div>
 									</div>

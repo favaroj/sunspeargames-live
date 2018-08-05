@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import {
   Collapse,
   Navbar,
@@ -15,9 +15,7 @@ import {
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import SunspearLogo from './../Assets/img/minified/logo.png';
 import './../App.css';
-import $ from 'jquery';
-import { LinkContainer } from "react-router-bootstrap";
-//import './../Assets/js/scroll.js';
+import {LinkContainer} from "react-router-bootstrap";
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -36,9 +34,7 @@ export default class NavBar extends React.Component {
     });
   }
   render() {
-
     return (
-  
       <div>
         <Navbar
           color="light"
@@ -47,45 +43,41 @@ export default class NavBar extends React.Component {
           expand="md"
           id="navbar-style"
           className="navbar">
-          <NavbarBrand href="./../App.js/#home"><img id="navbar-logo" src={SunspearLogo}/></NavbarBrand>
+          <NavbarBrand id="nav-brand">
+            <LinkContainer to="/">
+              <img id="navbar-logo" src={SunspearLogo}/>
+            </LinkContainer>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle}/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <LinkContainer to="/">
-              <NavItem>
-            
+                <NavItem>
                   <NavLink
-      
                     id="nav-item"
-                 
                     onClick={this.state.isOpen
                     ? this.toggle
                     : null}>Home</NavLink>
-   
-              </NavItem>
+                </NavItem>
               </LinkContainer>
               <LinkContainer to="/Immortal">
-              <NavItem >
-    
+                <NavItem >
                   <NavLink
-                  
                     id="nav-item"
-                    
                     onClick={this.state.isOpen
                     ? this.toggle
                     : null}>IMMORTAL</NavLink>
-     
-              </NavItem>
+                </NavItem>
               </LinkContainer>
-              <NavItem>
-                <NavLink
-                  data-scroll
-                  id="nav-item"
-                  href="./../Assets/pages/team.html"
-                  onClick={this.state.isOpen
-                  ? this.toggle
-                  : null}>Team</NavLink>
-              </NavItem>
+              <LinkContainer to="/Team">
+                <NavItem>
+                  <NavLink
+                    id="nav-item"
+                    onClick={this.state.isOpen
+                    ? this.toggle
+                    : null}>Team</NavLink>
+                </NavItem>
+              </LinkContainer>
               <NavItem>
                 <NavLink
                   data-scroll
@@ -95,44 +87,10 @@ export default class NavBar extends React.Component {
                   ? this.toggle
                   : null}>Contact</NavLink>
               </NavItem>
-              {/*}
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#IMMORTAL">
-                  <span>IMMORTAL</span>
-                </a>
-              </li>
-              <li>
-                <a href="../pages/team.html">
-                  <span>Team</span>
-                </a>
-              </li>
-              <li>
-                <a href="#live">
-                  <span>Live</span>
-                </a>
-              </li>
-              <li>
-                <a href="../pages/team.html">
-                  <span>Blog</span>
-                </a>
-              </li>
-              <li>
-                <a href="#contact">
-                  <span>Contact</span>
-                </a>
-              </li>
-
-              onClick={this.state.isOpen
-                ? this.toggle
-                : null}*/}
             </Nav>
           </Collapse>
         </Navbar>
       </div>
-   
     )
   }
 }
