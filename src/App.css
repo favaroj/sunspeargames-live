@@ -70,11 +70,21 @@ body {
 }
 
 #nav-item {
-    /* font-weight: bold; */
+    font-weight: 450;
     color: black;
 }
 
+#nav-item-live {
+    color: red;
+    font-weight: bold;
+}
+
+#nav-item-live:hover {
+    cursor: pointer;
+}
+
 #nav-item:hover {
+    /* font-weight: bold; */
     color: red;
     cursor: pointer;
 }
@@ -703,7 +713,77 @@ section .subtitle-half h5 {
 }
 
 /* ========================================================================
-   =================================FOOTER================================
+   =================================CONSULTING================================
+   ======================================================================== 
+*/
+
+.consulting-header {
+    margin-top: 150px;
+}
+
+.consulting-header h1 {
+    font-size: 3.5rem;
+}
+
+.consulting-hr {
+    width: 90%;
+    border-top: 3px solid rgba(0,0,0,.1);
+}
+
+.consulting-container {
+    display: flex;
+    justify-content: center;
+    padding: 350px 0; 
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+}
+
+#consult-img {
+    /* background: url(./Assets/img/icon-consult-design.png) no-repeat center; */
+    width: 60%
+}
+
+/* ========================================================================
+   =================================TWITCH=================================
+   ======================================================================== 
+*/
+
+iframe {
+    margin-top: 100px;
+}
+
+.twitch-streamer-main-header {
+    text-align: center;
+}
+
+.twitch-streamer-sub-header {
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+
+/* ========================================================================
+   =================================FOOTER=================================
    ======================================================================== 
 */
 
@@ -886,6 +966,30 @@ ul {
     }
     .banner-conatiner {
         padding-bottom: 0px!important;
+    }
+    .consulting-header {
+        margin-top: 100px;
+    }
+    .consulting-header h1 {
+        font-size: 2.5rem;
+    }
+    .consulting-hr {
+        width: 90%;
+        border-top: 3px solid rgba(0,0,0,.1);
+    }
+    .consulting-container {
+        display: flex;
+        flex-direction: column;
+   
+        padding-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+    #consult-img {
+        width: 10.5em;
+        margin-bottom: 10px;
+        /* height: 13.4em; */
     }
 }
 

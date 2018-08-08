@@ -16,6 +16,7 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import SunspearLogo from './../Assets/img/minified/logo.png';
 import './../App.css';
 import {LinkContainer} from "react-router-bootstrap";
+import $ from 'jquery';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -25,9 +26,48 @@ export default class NavBar extends React.Component {
       .toggle
       .bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      streaming: false
     };
   }
+
+  componentDidMount() {
+    let that = this;
+    $.ajax({
+      dataType: "json",
+      url: "https://api.twitch.tv/kraken/streams/incontroltv/",
+      headers: {
+        'Client-ID': 'monns9nyrbwh9orasetxcm2tdzc7x5'
+      },
+      success: function (data) {
+        if(data.status !== 404){
+          if(data.stream ){
+            that.setState({
+              streaming: true
+            });
+          }
+        }
+      }
+    });
+
+    $.ajax({
+      dataType: "json",
+      url: "https://api.twitch.tv/kraken/streams/jakataktv/",
+      headers: {
+        'Client-ID': 'monns9nyrbwh9orasetxcm2tdzc7x5'
+      },
+      success: function (data) {
+        if(data.status !== 404){
+          if(data.stream ){
+            that.setState({
+              streaming: true
+            });
+          }
+        }
+      }
+    });
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -78,7 +118,19 @@ export default class NavBar extends React.Component {
                     : null}>Team</NavLink>
                 </NavItem>
               </LinkContainer>
+              {this.state.streaming ?
+              <LinkContainer to="/Live">
               <NavItem>
+                <NavLink
+                  id="nav-item-live"
+                  onClick={this.state.isOpen
+                  ? this.toggle
+                  : null}>Live!</NavLink>
+              </NavItem>
+            </LinkContainer>
+            : null
+            }
+              {/* <NavItem>
                 <NavLink
                   data-scroll
                   id="nav-item"
@@ -86,7 +138,7 @@ export default class NavBar extends React.Component {
                   onClick={this.state.isOpen
                   ? this.toggle
                   : null}>Contact</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>

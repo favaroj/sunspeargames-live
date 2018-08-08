@@ -11,6 +11,7 @@
     "eslint": "^5.1.0",
     "fireworks-canvas": "^2.2.0",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.2.0",
     "history": "^4.7.2",
     "jarallax": "^1.10.3",
     "jquery": "^3.3.1",
@@ -21,7 +22,6 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
-    "react-fontawesome": "^1.6.1",
     "react-image-parallax2": "^0.1.6",
     "react-lazy-hero": "^0.4.0",
     "react-lines-ellipsis": "^0.13.2",
@@ -37,12 +37,17 @@
     "react-scroll-to-component": "^1.0.2",
     "react-simple-parallax": "^0.2.6",
     "react-spring": "^5.5.1",
-    "reactstrap": "^6.3.0"
+    "react-twitch-embed-video": "^1.0.1",
+    "reactstrap": "^6.3.0",
+    "twitch-embed": "^1.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "https://favaroj.github.io/sunspeargames-live/"
 }

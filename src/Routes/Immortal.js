@@ -1,23 +1,14 @@
 import React, {Component} from "react";
 import SunspearGoldLogo from "./../Assets/img/minified/sunspear-logo-gold-trans-large-min.PNG";
-import Talmetra from "./../Assets/img/splash-talmetra-celebrate.jpg"
-// import SplashRootWitch from
-// "./../Assets/img/minified/splash-rootwitch-scaled-min.jpg";
 import ArashOfDeliverance from "./../Assets/img/minified/arash-of-deliverance-trans.png";
 import Bloodbound from "./../Assets/img/minified/Bloodbound-Semibright-nobg.png";
 import IanImage from "./../Assets/img/minified/ian2.png";
 import DylanImage from "./../Assets/img/minified/dylan.png";
-import NavBar from "./../Components/NavBar";
 import Header from "./../Components/Header";
-import Banner from "./../Components/Banner";
 import SplashRootWitch from "./../Components/SplashRootWitch";
 import Footer from "./../Components/Footer";
-import CircleImage from "./../Assets/img/circle.png";
-import {Parallax, Background} from 'react-parallax';
-//import "jquery-parallax.js";
 import "./../Assets/css/font-awesome.min.css";
 import "./../App.css";
-//import "./Assets/js/scroll.js";
 
 class App extends Component {
 	constructor() {
@@ -28,7 +19,6 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				{/*<NavBar/>*/}
 
 				<Header h2Text="Competition, Cooperation" h1Text="for All"/>
 

@@ -9,18 +9,7 @@ import DylanImage from "./../Assets/img/team-portrait-dylan.jpg";
 import TravisImage from "./../Assets/img/team-portrait-travis.JPG";
 import ThomasImage from "./../Assets/img/team-portrait-thomas.png";
 import TheoImage from "./../Assets/img/team-portrait-theo.png";
-// import SunspearGoldLogo from
-// "./Assets/img/minified/sunspear-logo-gold-trans-large-min.PNG";
 import SplashRootWitch from "./../Components/SplashRootWitch";
-// import ArashOfDeliverance from
-// "./Assets/img/minified/arash-of-deliverance-trans.png"; import Bloodbound
-// from "./Assets/img/minified/Bloodbound-Semibright-nobg.png"; import IanImage
-// from "./Assets/img/minified/ian2.png"; import DylanImage from
-// "./Assets/img/minified/dylan.png"; import NavBar from
-// "./../Components/NavBar";
-import NavBar from "./NavBar";
-// import Header from "./Components/Header"; import Banner from
-// "./Components/Banner";
 import Footer from "./../Components/Footer";
 import LinesEllipsis from 'react-lines-ellipsis'
 import "./../Assets/css/font-awesome.min.css";
@@ -104,17 +93,13 @@ export default class Team extends React.Component {
 					showTheoLongText: !this.state.showTheoLongText
 				});
 				break;
-
 		}
 	}
 
 	render() {
 		return (
 			<div className="App">
-				<NavBar/>
-
 				<SplashRootWitch h2Text="FORGING A WORLD" h1Text="CLASS TEAM"/>
-
 				<section id="about" className="fluid-container sections3">
 					<div className="row">
 						<div className="col-md-5 padding30">
@@ -185,13 +170,12 @@ export default class Team extends React.Component {
 													ellipsis='...'
 													trimRight
 													basedOn='letters'/>
-}
+											}
 										</div>
 									</div>
 								</div>
 								<div className="col-md-6 margin-top-30">
 									<div className="fluid-container">
-
 										<div className="portrait-container">
 											<img className="team-portrait rounded-circle" src={RonImage}/>
 										</div>
@@ -236,7 +220,7 @@ export default class Team extends React.Component {
 													ellipsis='...'
 													trimRight
 													basedOn='letters'/>
-}
+											}
 										</div>
 									</div>
 								</div>
@@ -254,8 +238,8 @@ export default class Team extends React.Component {
 										<h4 className="team-name">Andy Hieke</h4>
 										<p className="team-title">Executive Producer</p>
 										<div
-											className="team-description-container"
-											onClick={() => this.toggleLongText("Andy")}>
+										className="team-description-container"
+										onClick={() => this.toggleLongText("Andy")}>
 											{this.state.showAndyLongText ?
 												<p>In 1981, Andrew Hieke founded Terminal Software, a software publisher and
 												later Binary Design Limited, focusing on software development with three studios
@@ -265,15 +249,15 @@ export default class Team extends React.Component {
 												promoted to Development Director at Spectrum’s head office in Alameda,
 												California, overseeing Star Trek, Top Gun and the Falcon brands.
 												<br></br><br></br>
-											As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
+												As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
 												Francisco based development company that developed card games for the
 												Imagination Network and pioneering multiplayer online games, Ten-Six and
 												Vigilance for SEGA's Heat.Net.
 												<br></br><br></br>
-											In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
+												In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
 												Corporation, the first US based development studio on the Nintendo campus.
 												<br></br><br></br>
-											In 2000, Hieke was General Manager and Senior Vice President of Atari’s
+												In 2000, Hieke was General Manager and Senior Vice President of Atari’s
 												Humongous Entertainment studio, working with titles in the Backyard Sports
 												franchise, the number one sports brand for children. Andy founded Nimbus Games
 												in 2009, developing and publishing games on Facebook and mobile platform
@@ -291,9 +275,9 @@ export default class Team extends React.Component {
 												Francisco based development company that developed card games for the
 												Imagination Network and pioneering multiplayer online games, Ten-Six and
 												Vigilance for SEGA's Heat.Net.
-											In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
-											Corporation, the first US based development studio on the Nintendo campus.
-											In 2000, Hieke was General Manager and Senior Vice President of Atari’s
+												In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
+												Corporation, the first US based development studio on the Nintendo campus.
+												In 2000, Hieke was General Manager and Senior Vice President of Atari’s
 												Humongous Entertainment studio, working with titles in the Backyard Sports
 												franchise, the number one sports brand for children. Andy founded Nimbus Games
 												in 2009, developing and publishing games on Facebook and mobile platform
@@ -304,7 +288,7 @@ export default class Team extends React.Component {
 												trimRight
 												basedOn='letters'/>
 											}
-											</div>
+										</div>
 									</div>
 								</div>
 
@@ -315,55 +299,54 @@ export default class Team extends React.Component {
 										</div>
 										<h4 className="team-name">Joseph Walters</h4>
 										<p className="team-title">Business Development</p>
-
 											<div
 											className="team-description-container"
 											onClick={() => this.toggleLongText("Joseph")}>
-											{this.state.showJosephLongText ?
-														<p>Joseph Walters is a product and customer driven technology leader with 25
-														years of experience in the gaming industry. A software engineer and serial
-														entrepreneur, Joseph was one of the founding members and CTO of Third Track,
-														where he led multiple teams developing game and simulation products across
-														multiple platforms. Before Third Track, Joseph was a field engineer with Unity
-														Technologies working directly with customers such as NASA, Walt Disney,
-														Nickelodeon, and all branches of the US Military to solve complex engineering
-														problems. He was CEO/CTO for the massive multiplayer online world of Gatheryn
-														where he led the fundraising efforts and managed the 50 person studio. Joseph
-														was a founding member, partner and CTO at at the hugely-successful Skunk Studios
-														where he developed consistent award-winning games. He is well known in video
-														game and software development circles as someone who can get software running,
-														on budget, and on time.
-														<br></br><br></br>
+												{this.state.showJosephLongText ?
+													<p>Joseph Walters is a product and customer driven technology leader with 25
+													years of experience in the gaming industry. A software engineer and serial
+													entrepreneur, Joseph was one of the founding members and CTO of Third Track,
+													where he led multiple teams developing game and simulation products across
+													multiple platforms. Before Third Track, Joseph was a field engineer with Unity
+													Technologies working directly with customers such as NASA, Walt Disney,
+													Nickelodeon, and all branches of the US Military to solve complex engineering
+													problems. He was CEO/CTO for the massive multiplayer online world of Gatheryn
+													where he led the fundraising efforts and managed the 50 person studio. Joseph
+													was a founding member, partner and CTO at at the hugely-successful Skunk Studios
+													where he developed consistent award-winning games. He is well known in video
+													game and software development circles as someone who can get software running,
+													on budget, and on time.
+													<br></br><br></br>
 													Before forming Skunk Studios, Joseph was a senior engineer at shockwave.com,
-														where he brought many titles to online gamers. Throughout his career he was
-														worked on projects for classic arcade games like Ultimate Tetris to massive
-														multiplayer online role playing games like Gatheryn to virtual reality product
-														simulators.</p>
-												: <LinesEllipsis
-												text='Joseph Walters is a product and customer driven technology leader with 25
-												years of experience in the gaming industry. A software engineer and serial
-												entrepreneur, Joseph was one of the founding members and CTO of Third Track,
-												where he led multiple teams developing game and simulation products across
-												multiple platforms. Before Third Track, Joseph was a field engineer with Unity
-												Technologies working directly with customers such as NASA, Walt Disney,
-												Nickelodeon, and all branches of the US Military to solve complex engineering
-												problems. He was CEO/CTO for the massive multiplayer online world of Gatheryn
-												where he led the fundraising efforts and managed the 50 person studio. Joseph
-												was a founding member, partner and CTO at at the hugely-successful Skunk Studios
-												where he developed consistent award-winning games. He is well known in video
-												game and software development circles as someone who can get software running,
-												on budget, and on time.
-											Before forming Skunk Studios, Joseph was a senior engineer at shockwave.com,
-												where he brought many titles to online gamers. Throughout his career he was
-												worked on projects for classic arcade games like Ultimate Tetris to massive
-												multiplayer online role playing games like Gatheryn to virtual reality product
-												simulators.'
-												maxLine='3'
-												ellipsis='...'
-												trimRight
-												basedOn='letters'/>
-											}
-								</div>
+													where he brought many titles to online gamers. Throughout his career he was
+													worked on projects for classic arcade games like Ultimate Tetris to massive
+													multiplayer online role playing games like Gatheryn to virtual reality product
+													simulators.</p>
+													: <LinesEllipsis
+													text='Joseph Walters is a product and customer driven technology leader with 25
+													years of experience in the gaming industry. A software engineer and serial
+													entrepreneur, Joseph was one of the founding members and CTO of Third Track,
+													where he led multiple teams developing game and simulation products across
+													multiple platforms. Before Third Track, Joseph was a field engineer with Unity
+													Technologies working directly with customers such as NASA, Walt Disney,
+													Nickelodeon, and all branches of the US Military to solve complex engineering
+													problems. He was CEO/CTO for the massive multiplayer online world of Gatheryn
+													where he led the fundraising efforts and managed the 50 person studio. Joseph
+													was a founding member, partner and CTO at at the hugely-successful Skunk Studios
+													where he developed consistent award-winning games. He is well known in video
+													game and software development circles as someone who can get software running,
+													on budget, and on time.
+												Before forming Skunk Studios, Joseph was a senior engineer at shockwave.com,
+													where he brought many titles to online gamers. Throughout his career he was
+													worked on projects for classic arcade games like Ultimate Tetris to massive
+													multiplayer online role playing games like Gatheryn to virtual reality product
+													simulators.'
+													maxLine='3'
+													ellipsis='...'
+													trimRight
+													basedOn='letters'/>
+												}
+										</div>
 									</div>
 								</div>
 							</div>
@@ -400,16 +383,15 @@ export default class Team extends React.Component {
 							</div>
 
 							<div className="row">
-					
-					<div className="col-md-6 margin-top-30">
-						<div className="team-detail-container">
-						
-							<div className="portrait-container">
-								<img className="team-portrait rounded-circle" src={DylanImage} />
-							</div>
-							<h4 className="team-name">Dylan Kahn</h4>
-							<p className="team-title">Creative Director</p>
-							<div className="team-description-container"
+								<div className="col-md-6 margin-top-30">
+									<div className="team-detail-container">
+									
+										<div className="portrait-container">
+											<img className="team-portrait rounded-circle" src={DylanImage} />
+										</div>
+										<h4 className="team-name">Dylan Kahn</h4>
+										<p className="team-title">Creative Director</p>
+										<div className="team-description-container"
 											onClick={() => this.toggleLongText("Dylan")}>
 											{this.state.showDylanLongText ?
 												<p>Dylan Kahn is a Creative Lead with six years of direct experience in esports design. Dylan founded and lead development in the OneGoal project to maximise StarCraft 2’s esport potential. After the mod’s success, Dylan joined Recloak Interactive as a Creative Designer, and later became a writer for Skywind. Dylan currently leads IMMORTAL’s creative teams in content creation and world building.</p>
@@ -421,9 +403,8 @@ export default class Team extends React.Component {
 											basedOn='letters'/>
 											}
 										</div>															
-							
-						</div>
-					</div>  
+									</div>
+								</div>  
 					
 					<div className="col-md-6 margin-top-30">
 						<div className="team-detail-container">
