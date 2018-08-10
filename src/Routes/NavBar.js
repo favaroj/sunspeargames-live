@@ -118,7 +118,16 @@ export default class NavBar extends React.Component {
                     : null}>Team</NavLink>
                 </NavItem>
               </LinkContainer>
-              {this.state.streaming ?
+              <LinkContainer to="/Contact">
+                <NavItem>
+                  <NavLink
+                      id="nav-item"
+                      onClick={this.state.isOpen
+                          ? this.toggle
+                          : null}>Contact</NavLink>
+                </NavItem>
+              </LinkContainer>
+              {/* {this.state.streaming ?
               <LinkContainer to="/Live">
               <NavItem>
                 <NavLink
@@ -129,16 +138,8 @@ export default class NavBar extends React.Component {
               </NavItem>
             </LinkContainer>
             : null
-            }
-              {/* <NavItem>
-                <NavLink
-                  data-scroll
-                  id="nav-item"
-                  href="./../App.js/#contact"
-                  onClick={this.state.isOpen
-                  ? this.toggle
-                  : null}>Contact</NavLink>
-              </NavItem> */}
+            }*/}
+
             </Nav>
           </Collapse>
         </Navbar>

@@ -66,7 +66,7 @@ class Home extends Component {
 
         <section id="index-learn-more" className="learn-more">
           <div className="overlay sections-quotes anti-shadow">
-          <ScrollAnimation animateIn="bounceInRight">
+          <ScrollAnimation animateIn="fadeInRight">
             <Link to="/Team">
               <div className="dot-div">
                 <p className="dot-text">TEAM</p>
@@ -74,14 +74,14 @@ class Home extends Component {
             </Link>
             </ScrollAnimation>
     
-            <ScrollAnimation animateIn="bounceInRight">
+            <ScrollAnimation animateIn="fadeInRight">
             <Link to="/Immortal">
               <div className="dot-div">
                 <p className="dot-text">IMMORTAL</p>
               </div>
             </Link>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="bounceInRight">
+            <ScrollAnimation animateIn="fadeInRight">
             <Link to="/Consulting">
               <div className="dot-div">
                 <p className="dot-text">CONSULTING</p>

@@ -60,8 +60,8 @@ body {
 }
 
 #navbar-style {
-    position: "fixed";
-    width: "100%";
+    position: fixed;
+    width: 100%;
     z-index: 1000;
     font-size: 20px;
     background-color: white;
@@ -72,6 +72,10 @@ body {
 #nav-item {
     font-weight: 450;
     color: black;
+}
+
+#nav-item:active {
+    color: red;
 }
 
 #nav-item-live {
@@ -88,8 +92,13 @@ body {
     color: red;
     cursor: pointer;
 }
+
 #nav-brand:hover {
     cursor: pointer;
+}
+
+.ml-auto, .mx-auto {
+    padding-right: 30px;
 }
 
 /* ==========================================================================
@@ -115,32 +124,6 @@ body {
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 901px) {
-    .banner {
-        background-image: url("./Assets/img/header-resize.png");
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .banner-container {
-        height: 600px;
-        padding: 74px 0 0px 0;
-    }
-}
-
-@media only screen and (min-width: 902) {
-    .banner {
-        background-image: url("./Assets/img/banner.png");
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .banner-container {
-        height: 370px;
-        padding: 100px 0 40px 0;
-    }
 }
 
 .whiteback {
@@ -266,12 +249,6 @@ img {
     height: auto;
     overflow-x: auto;
     overflow-y: auto;
-}
-
-@media (max-width: 768px) {
-    .home-content h2 {
-        font-size: 1.3em;
-    }
 }
 
 .anti-shadow {
@@ -923,7 +900,6 @@ ul {
     .react-parallax-bgimage-header {
         /* padding-top: 5px; */
        max-height: 60%!important;
-        
     }
     img {
         height: 100%!important;
@@ -1004,8 +980,40 @@ ul {
   .dot-div {
     width: 18.5em!important;
     height: 18.5em!important;
+  }
 }
-} 
+
+@media only screen and (max-width: 992px) {
+    .banner {
+        background-image: url("./Assets/img/header-resize.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .banner-container {
+        height: 600px;
+        padding: 74px 0 0px 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner {
+        background-image: url("./Assets/img/banner.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .banner-container {
+        height: 370px;
+        padding: 100px 0 40px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h2 {
+        font-size: 1.3em;
+    }
+}
 
 /* ========================================================================
    =================================MISCELLANEOUS============================

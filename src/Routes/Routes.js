@@ -6,6 +6,7 @@ import Immortal from "./Immortal";
 import Home from "./Home";
 import Team from "./Team";
 import Consulting from "./Consulting";
+import Contact from "./Contact";
 import Live from "./Live";
 
 export default class Routes extends Component {
@@ -21,7 +22,8 @@ export default class Routes extends Component {
             <Route path="/Immortal" component={Immortal}/>
             <Route path="/Team" component={Team}/>
             <Route path="/Consulting" component={Consulting}/>
-            <Route path="/Live" component={Live}/>
+            <Route path="/Contact" component={Contact}/>
+            {/*<Route path="/Live" component={Live}/>*/}
           </Switch>
         </div>
         </ScrollToTop>
