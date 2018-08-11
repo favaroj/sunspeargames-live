@@ -72,6 +72,9 @@ body {
 #nav-item {
     font-weight: 450;
     color: black;
+    padding: 0px;
+    padding-right: 10px;
+    text-decoration: none;
 }
 
 
@@ -95,12 +98,20 @@ body {
     cursor: pointer;
 }
 
+.navbar-brand {
+    padding-left: 20px;
+}
+
 #nav-brand:hover {
     cursor: pointer;
 }
 
 .ml-auto, .mx-auto {
     padding-right: 30px;
+}
+
+.is-active {
+    color: red;
 }
 
 /* ==========================================================================
@@ -164,7 +175,7 @@ img {
     -webkit-user-drag: none;
     user-drag: none;
     max-width: 100%;
-    height: auto!important;
+    /*height: auto!important;*/
 }
 
 /* ==========================================================================
@@ -982,6 +993,20 @@ ul {
     .ml-auto, .mx-auto {
         padding-right: 0px;
     }
+    #nav-item {
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+    #nav-link-style {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    /*img {
+        height: 100%;
+    }*/
 }
 
 @media only screen and (min-width: 992px) {

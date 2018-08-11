@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import SunspearGoldLogo from "./../Assets/img/minified/sunspear-logo-gold-trans-large-min.PNG";
+import NavBar from "./NavBar";
 import Banner from "./../Components/Banner";
 import Footer from "./../Components/Footer";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, NavLink} from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import "./../Assets/css/font-awesome.min.css";
@@ -67,26 +68,26 @@ class Home extends Component {
         <section id="index-learn-more" className="learn-more">
           <div className="overlay sections-quotes anti-shadow">
           <ScrollAnimation animateIn="fadeInRight">
-            <Link to="/Team">
+            <NavLink to="/Team" activeStyle={{color: 'red'}}>
               <div className="dot-div">
                 <p className="dot-text">TEAM</p>
               </div>
-            </Link>
+            </NavLink>
             </ScrollAnimation>
     
             <ScrollAnimation animateIn="fadeInRight">
-            <Link to="/Immortal">
-              <div className="dot-div">
+            <NavLink to="/Immortal" activeStyle={{color: 'red'}}>
+              <div className="dot-div" onClick={NavBar.setLinksFromHome.bind(this, "Immortal")}>
                 <p className="dot-text">IMMORTAL</p>
               </div>
-            </Link>
+            </NavLink>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInRight">
-            <Link to="/Consulting">
+            <NavLink to="/Consulting" activeStyle={{color: 'red'}}>
               <div className="dot-div">
                 <p className="dot-text">CONSULTING</p>
               </div>
-            </Link>
+            </NavLink>
             </ScrollAnimation>
           </div>
         </section>

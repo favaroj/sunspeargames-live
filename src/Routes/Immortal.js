@@ -41,15 +41,15 @@ class App extends Component {
 							</p>
 							<ul className="txt-ul">
 								<li className="txt-li">
-									<strong>Social:</strong>
+									<strong>Social: </strong>
 									No matter what the battlefield throws at you, someone has your back.
 								</li>
 								<li className="txt-li">
-									<strong>Accessibile:</strong>
+									<strong>Accessibile: </strong>
 									Mastery is a path, and starting has never been easier.
 								</li>
 								<li className="txt-li">
-									<strong>Free-To-Play:</strong>
+									<strong>Free-To-Play: </strong>
 									Good experiences are meant to be shared. Our games are fair and free to play,
 									and never pay-to-win.
 								</li>
@@ -155,22 +155,22 @@ class App extends Component {
 							</p>
 							<ul className="txt-ul">
 								<li className="txt-li">
-									<strong>Play your Way:</strong>
+									<strong>Play your Way: </strong>
 									Descend from the sky with angelic legions, sweep across the land with alien
 									hordes, or take to the field with magi-tech desparados. With over seven
 									civilizations and dozens of commanders, players choose and customize their
 									playstyle.
 								</li>
 								<li className="txt-li">
-									<strong>Rally your Allies:</strong>
+									<strong>Rally your Allies: </strong>
 									Bring your friends to the battlefield with exciting team gameplay.
 								</li>
 								<li className="txt-li">
-									<strong>Command your Army:</strong>
+									<strong>Command your Army: </strong>
 									Innovative controls and UI features put the power in your hands.
 								</li>
 								<li className="txt-li">
-									<strong>Sieze your Victory:</strong>
+									<strong>Sieze your Victory: </strong>
 									Reward yourself and your allies with the spoils of war. Create and customize
 									armor and relics that display your power.
 								</li>
@@ -196,18 +196,17 @@ class App extends Component {
 								</p>
 								<ul className="txt-ul">
 									<li className="txt-li">
-										<strong>Community First:</strong>
+										<strong>Community First: </strong>
 										Chat channels, clans, in-client streaming, and automated tournaments prioritize
 										strong and positive communities.
 									</li>
 									<li className="txt-li">
-										<strong>Built for the Highlight Reel:</strong>
+										<strong>Built for the Highlight Reel: </strong>
 										Units shine in the hands of a skilled player. Achieve mastery and impart your
 										will on the battlefield.
 									</li>
 									<li className="txt-li">
-										<strong>Fair Gameplay, for All:
-										</strong>
+										<strong>Fair Gameplay, for All: </strong>
 										With a free rotation of heroes, players are always empowered to compete. All
 										gameplay-affecting content can be earned through play.
 									</li>

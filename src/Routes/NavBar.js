@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, NavLink as RRNavLink} from 'react-router-dom'
 import SunspearLogo from './../Assets/img/minified/logo.png'
 import './../App.css'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -26,6 +26,7 @@ export default class NavBar extends React.Component {
       .toggle
       .bind(this)
     this.setActive = this.setActive.bind(this)
+
     this.state = {
       isOpen: false,
       streaming: false,
@@ -35,6 +36,7 @@ export default class NavBar extends React.Component {
       consultingColor: 'black',
       contactColor: 'black'
     }
+
   }
 
   componentDidMount () {
@@ -128,6 +130,32 @@ export default class NavBar extends React.Component {
         break
     }
   }
+  static setLinksFromHome(Location) {
+
+    switch (Location) {
+      case 'Team':
+        this.setState({
+          homeColor: 'black',
+          immortalColor: 'black',
+          teamColor: 'red',
+          consultingColor: 'black',
+          contactColor: 'black'
+        })
+        break
+      case 'Immortal':
+
+        break
+      case 'Consulting':
+        this.setState({
+          homeColor: 'black',
+          immortalColor: 'black',
+          teamColor: 'black',
+          consultingColor: 'red',
+          contactColor: 'black'
+        })
+        break
+    }
+  }
   render () {
     return (
       <div>
@@ -147,63 +175,69 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <LinkContainer to='/' >
-                <NavItem onClick={() => this.setActive('Home')}>
-                  <NavLink
-                    id='nav-item'
-                    style={{color: this.state.homeColor}}
+                <NavItem id='nav-item'>
+                  <RRNavLink
+                      exact={true}
+                      to='/'
+                      activeStyle={{color: 'red'}}
+                      id="nav-link-style"
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
                     Home
-                  </NavLink>
+                  </RRNavLink>
                 </NavItem>
               </LinkContainer>
               <LinkContainer to='/Immortal'>
-                <NavItem onClick={() => this.setActive('Immortal')}>
-                  <NavLink
-                    id='nav-item'
-                    style={{color: this.state.immortalColor}}
+                <NavItem id='nav-item'>
+                  <RRNavLink
+                      to='/Immortal'
+                      activeStyle={{color: 'red'}}
+                      id="nav-link-style"
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
                     IMMORTAL
-                  </NavLink>
+                  </RRNavLink>
                 </NavItem>
               </LinkContainer>
               <LinkContainer to='/Team'>
-                <NavItem onClick={() => this.setActive('Team')}>
-                  <NavLink
-                    id='nav-item'
-                    style={{color: this.state.teamColor}}
+                <NavItem id="nav-item">
+                  <RRNavLink
+                      to='/Team'
+                      activeStyle={{color: 'red'}}
+                      id="nav-link-style"
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
                     Team
-                  </NavLink>
+                  </RRNavLink>
                 </NavItem>
               </LinkContainer>
               <LinkContainer to='/Consulting'>
-                <NavItem onClick={() => this.setActive('Consulting')}>
-                  <NavLink
-                    id='nav-item'
-                    style={{color: this.state.consultingColor}}
+                <NavItem id='nav-item'>
+                  <RRNavLink
+                      to='/Consulting'
+                      activeStyle={{color: 'red'}}
+                      id="nav-link-style"
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
                     Consulting
-                  </NavLink>
+                  </RRNavLink>
                 </NavItem>
               </LinkContainer>
               <LinkContainer to='/Contact'>
-                <NavItem onClick={() => this.setActive('Contact')}>
-                  <NavLink
-                    id='nav-item'
-                    style={{color: this.state.contactColor}}
+                <NavItem id='nav-item'>
+                  <RRNavLink
+                      to='/Contact'
+                      activeStyle={{color: 'red'}}
+                      id="nav-link-style"
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
                     Contact
-                  </NavLink>
+                  </RRNavLink>
                 </NavItem>
               </LinkContainer>
               {/* {this.state.streaming ?
