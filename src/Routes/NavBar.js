@@ -36,7 +36,6 @@ export default class NavBar extends React.Component {
       consultingColor: 'black',
       contactColor: 'black'
     }
-
   }
 
   componentDidMount () {
@@ -130,8 +129,7 @@ export default class NavBar extends React.Component {
         break
     }
   }
-  static setLinksFromHome(Location) {
-
+  static setLinksFromHome (Location) {
     switch (Location) {
       case 'Team':
         this.setState({
@@ -177,10 +175,10 @@ export default class NavBar extends React.Component {
               <LinkContainer to='/' >
                 <NavItem id='nav-item'>
                   <RRNavLink
-                      exact={true}
-                      to='/'
-                      activeStyle={{color: 'red'}}
-                      id="nav-link-style"
+                    exact
+                    to='/'
+                    activeStyle={{color: 'red'}}
+                    id='nav-link-style'
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
@@ -191,9 +189,9 @@ export default class NavBar extends React.Component {
               <LinkContainer to='/Immortal'>
                 <NavItem id='nav-item'>
                   <RRNavLink
-                      to='/Immortal'
-                      activeStyle={{color: 'red'}}
-                      id="nav-link-style"
+                    to='/Immortal'
+                    activeStyle={{color: 'red'}}
+                    id='nav-link-style'
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
@@ -202,11 +200,11 @@ export default class NavBar extends React.Component {
                 </NavItem>
               </LinkContainer>
               <LinkContainer to='/Team'>
-                <NavItem id="nav-item">
+                <NavItem id='nav-item'>
                   <RRNavLink
-                      to='/Team'
-                      activeStyle={{color: 'red'}}
-                      id="nav-link-style"
+                    to='/Team'
+                    activeStyle={{color: 'red'}}
+                    id='nav-link-style'
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
@@ -217,9 +215,9 @@ export default class NavBar extends React.Component {
               <LinkContainer to='/Consulting'>
                 <NavItem id='nav-item'>
                   <RRNavLink
-                      to='/Consulting'
-                      activeStyle={{color: 'red'}}
-                      id="nav-link-style"
+                    to='/Consulting'
+                    activeStyle={{color: 'red'}}
+                    id='nav-link-style'
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
@@ -230,9 +228,9 @@ export default class NavBar extends React.Component {
               <LinkContainer to='/Contact'>
                 <NavItem id='nav-item'>
                   <RRNavLink
-                      to='/Contact'
-                      activeStyle={{color: 'red'}}
-                      id="nav-link-style"
+                    to='/Contact'
+                    activeStyle={{color: 'red'}}
+                    id='nav-link-style'
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>

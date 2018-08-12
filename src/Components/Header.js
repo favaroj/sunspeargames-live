@@ -48,7 +48,7 @@ export default class Header extends Component {
                       <div className="col-md-12">
                         <div className="home-content">
                         <ScrollAnimation animateIn="fadeIn">
-                          <h2 className="set-zindex-top ">
+                          <h2 className="set-zindex-top " id="h2-responsive">
                             {this.props.h2Text}
                           </h2>
                           <h1 className="set-zindex-top " id="h1-responsive">
@@ -73,10 +73,10 @@ export default class Header extends Component {
                     <div className="col-md-12">
                       <div className="home-content">
                       {/* <ScrollAnimation animateIn="fadeIn"> */}
-                        <h2 className="set-zindex-top ">
+                        <h2 className="set-zindex-top" id="h2-responsive">
                           {this.props.h2Text}
                         </h2>
-                        <h1 className="set-zindex-top " id="h1-responsive">
+                        <h1 className="set-zindex-top" id="h1-responsive">
                           {this.props.h1Text}
                         </h1>
                         {/* </ScrollAnimation> */}

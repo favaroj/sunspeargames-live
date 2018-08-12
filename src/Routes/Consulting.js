@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 import ConsultDesign from './../Assets/img/icon-consult-design.png'
 import ConsultDesignHover from './../Assets/img/icon-consult-design-hover.png'
 import ConsultBalance from './../Assets/img/icon-consult-balance.png'
@@ -19,32 +20,46 @@ class Consulting extends Component {
     this.state = {
       consultDesignImage: ConsultDesign,
       consultBalanceImage: ConsultBalance,
-      consultEducationImage: ConsultEducation
+      consultEducationImage: ConsultEducation,
+      consultText: null
     }
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.handleFocusDiv = this.handleFocusDiv.bind(this)
+    this.focusDiv = React.createRef()
   }
 
-  componentDidMount () {}
+  componentDidMount () {
 
+  }
+  handleFocusDiv () {
+    const textDivNode = ReactDOM.findDOMNode(this.refs.focusDiv)
+    window.scrollTo(0, 200)
+  }
   handleMouseEnter (component) {
     switch (component) {
       case 'Design':
         this.setState({
-          consultDesignImage: ConsultDesignHover
+          consultDesignImage: ConsultDesignHover,
+          consultText: <h1>Design</h1>
         })
+        this.handleFocusDiv()
         break
 
       case 'Balance':
         this.setState({
-          consultBalanceImage: ConsultBalanceHover
+          consultBalanceImage: ConsultBalanceHover,
+          consultText: <h1>Balance</h1>
         })
+        this.handleFocusDiv()
         break
 
       case 'Education':
         this.setState({
-          consultEducationImage: ConsultEducationHover
+          consultEducationImage: ConsultEducationHover,
+          consultText: <h1>Education</h1>
         })
+        this.handleFocusDiv()
         break
     }
   }
@@ -53,19 +68,22 @@ class Consulting extends Component {
     switch (component) {
       case 'Design':
         this.setState({
-          consultDesignImage: ConsultDesign
+          consultDesignImage: ConsultDesign,
+          consultText: null
         })
         break
 
       case 'Balance':
         this.setState({
-          consultBalanceImage: ConsultBalance
+          consultBalanceImage: ConsultBalance,
+          consultText: null
         })
         break
 
       case 'Education':
         this.setState({
-          consultEducationImage: ConsultEducation
+          consultEducationImage: ConsultEducation,
+          consultText: null
         })
         break
     }
@@ -82,22 +100,25 @@ class Consulting extends Component {
           <div className='consulting-container'>
 
             <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' onMouseEnter={() => this.handleMouseEnter('Design')} onMouseLeave={() => this.handleMouseLeave('Design')}>
-                <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' />
+              <div className='' >
+                <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Design')} onMouseLeave={() => this.handleMouseLeave('Design')}/>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')}>
-                <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' />
+              <div className='' >
+                <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')}/>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}>
-                <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' />
+              <div className='' >
+                <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}/>
               </div>
             </ScrollAnimation>
+          </div>
+          <div className='consulting-text-container' ref='focusDiv'>
+            {this.state.consultText}
           </div>
         </section>
 

@@ -44,7 +44,7 @@ export default class SplashRootWitch extends Component {
 											<div className="col-md-12">
 												<div className="home-content">
 													<ScrollAnimation animateIn="fadeIn">
-														<h2 className="set-zindex-top">{this.props.h2Text}</h2>
+														<h2 className="set-zindex-top" id="h2-responsive">{this.props.h2Text}</h2>
 														<h1 className="set-zindex-top" id="h1-responsive">
 															{this.props.h1Text}
 														</h1>
@@ -64,7 +64,7 @@ export default class SplashRootWitch extends Component {
 										<div className="col-md-12">
 											<div className="home-content">
 											{/* <ScrollAnimation animateIn="fadeIn"> */}
-												<h2 className="set-zindex-top">{this.props.h2Text}</h2>
+												<h2 className="set-zindex-top" id="h2-responsive">{this.props.h2Text}</h2>
 												<h1 className="set-zindex-top" id="h1-responsive">
 												{this.props.h1Text}
 												</h1>
