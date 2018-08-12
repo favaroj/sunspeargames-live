@@ -10,6 +10,7 @@ import TravisImage from './../Assets/img/team-portrait-travis.JPG'
 import ThomasImage from './../Assets/img/team-portrait-thomas.png'
 import TheoImage from './../Assets/img/team-portrait-theo.png'
 import SplashRootWitch from './../Components/SplashRootWitch'
+import Avatar from 'react-avatar'
 import Footer from './../Components/Footer'
 import LinesEllipsis from 'react-lines-ellipsis'
 import './../Assets/css/font-awesome.min.css'
@@ -139,7 +140,8 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Ian')}>
                   <div className='fluid-container'>
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={IanImage} />
+                      <Avatar src={IanImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={IanImage} />*/}
                     </div>
                     <h4 className='team-name'>Ian Hunt</h4>
                     <p className='team-title'>CEO</p>
@@ -175,7 +177,8 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Ron')}>
                   <div className='fluid-container'>
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={RonImage} />
+                      <Avatar src={RonImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={RonImage} />*/}
                     </div>
                     <h4 className='team-name'>Ron Zargoza</h4>
                     <p className='team-title'>Business Development</p>
@@ -231,7 +234,8 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Andy')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={AndyImage} />
+                      <Avatar src={AndyImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={AndyImage} />*/}
                     </div>
                     <h4 className='team-name'>Andy Hieke</h4>
                     <p className='team-title'>Executive Producer</p>
@@ -293,7 +297,8 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Joseph')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={JosephImage} />
+                      <Avatar src={JosephImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={JosephImage} />*/}
                     </div>
                     <h4 className='team-name'>Joseph Walters</h4>
                     <p className='team-title'>Business Development</p>
@@ -353,7 +358,8 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Colter')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={ColterImage} />
+                      <Avatar src={ColterImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={ColterImage} />*/}
                     </div>
                     <h4 className='team-name'>Colter Hochstetler</h4>
                     <p className='team-title'>UX Designer come Producer</p>
@@ -385,7 +391,8 @@ export default class Team extends React.Component {
                   <div className='team-detail-container'>
 
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={DylanImage} />
+                      <Avatar src={DylanImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={DylanImage} />*/}
                     </div>
                     <h4 className='team-name'>Dylan Kahn</h4>
                     <p className='team-title'>Creative Director</p>
@@ -408,7 +415,8 @@ export default class Team extends React.Component {
                   <div className='team-detail-container'>
 
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={TravisImage} />
+                      <Avatar src={TravisImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={TravisImage} />*/}
                     </div>
                     <h4 className='team-name'>Travis Toler</h4>
                     <p className='team-title'>Gameplay Lead</p>
@@ -432,7 +440,8 @@ export default class Team extends React.Component {
                   <div className='team-detail-container'>
 
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={ThomasImage} />
+                      <Avatar src={ThomasImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={ThomasImage} />*/}
                     </div>
                     <h4 className='team-name'>Thomas Labonte</h4>
                     <p className='team-title'>UX Lead, Community Lead</p>
@@ -456,7 +465,8 @@ export default class Team extends React.Component {
                   <div className='team-detail-container'>
 
                     <div className='portrait-container'>
-                      <img className='team-portrait rounded-circle' src={TheoImage} />
+                      <Avatar src={TheoImage} size='350' round={true}/>
+                      {/*<img className='team-portrait rounded-circle' src={TheoImage} />*/}
                     </div>
                     <h4 className='team-name'>Theo Mikkelsen</h4>
                     <p className='team-title'>Balance Designer, Esports Community Manager</p>
