@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2ce552b-315c-43e8-884f-0883c2ed8c76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-colter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-colter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-joseph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-joseph.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-theo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-theo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-thomas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-thomas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-travis.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-travis.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,16 +55,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12631">
-              <caret line="743" column="15" selection-start-line="743" selection-start-column="15" selection-end-line="743" selection-end-column="15" />
+            <state relative-caret-position="420">
+              <caret line="366" column="30" selection-start-line="366" selection-start-column="30" selection-end-line="366" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Team.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Team.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
@@ -95,18 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Routes/Routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -124,6 +105,7 @@
       <find>h1-re</find>
       <find>header</find>
       <find>consult</find>
+      <find>dot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,8 +122,8 @@
         <option value="$PROJECT_DIR$/src/Components/SplashRootWitch.js" />
         <option value="$PROJECT_DIR$/src/Components/Header.js" />
         <option value="$PROJECT_DIR$/src/Routes/Consulting.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Routes/Team.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -262,12 +244,12 @@
       <updated>1533687496613</updated>
       <workItem from="1533687498003" duration="5517000" />
       <workItem from="1533865601210" duration="8925000" />
-      <workItem from="1534044487269" duration="1549000" />
+      <workItem from="1534044487269" duration="3692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39303000" />
+    <option name="totallyTimeSpent" value="41446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -530,27 +512,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12631">
-          <caret line="743" column="15" selection-start-line="743" selection-start-column="15" selection-end-line="743" selection-end-column="15" />
+        <state relative-caret-position="323">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Routes/Routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -573,6 +548,13 @@
             <element signature="e#26810#27598#0" />
             <element signature="e#28927#29643#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="366" column="30" selection-start-line="366" selection-start-column="30" selection-end-line="366" selection-end-column="30" />
         </state>
       </provider>
     </entry>

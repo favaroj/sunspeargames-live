@@ -364,7 +364,7 @@ overflow: hidden; */
 .dot-div:hover {
     background: white;
     cursor: pointer;
-    color: red;
+    color:rgba(58,29,34, 2.9);
 }
 
 .dot-text {
