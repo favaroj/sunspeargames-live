@@ -58,25 +58,25 @@ class Home extends Component {
 
         <section id='index-learn-more' className='learn-more'>
           <div className='overlay sections-quotes anti-shadow'>
-            <ScrollAnimation animateIn='fadeInRight'>
+            <ScrollAnimation animateIn='fadeIn'>
               <NavLink to='/Team' activeStyle={{color: 'red'}}>
                 <div className='dot-div'>
-                  <p className='dot-text'>TEAM</p>
+                  <p className='dot-text'>About Us</p>
                 </div>
               </NavLink>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn='fadeInRight'>
+            <ScrollAnimation animateIn='fadeIn'>
               <NavLink to='/Immortal' activeStyle={{color: 'red'}}>
                 <div className='dot-div' onClick={NavBar.setLinksFromHome.bind(this, 'Immortal')}>
                   <p className='dot-text'>IMMORTAL</p>
                 </div>
               </NavLink>
             </ScrollAnimation>
-            <ScrollAnimation animateIn='fadeInRight'>
+            <ScrollAnimation animateIn='fadeIn'>
               <NavLink to='/Consulting' activeStyle={{color: 'red'}}>
                 <div className='dot-div'>
-                  <p className='dot-text'>CONSULTING</p>
+                  <p className='dot-text'>Consulting</p>
                 </div>
               </NavLink>
             </ScrollAnimation>

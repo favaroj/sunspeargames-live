@@ -210,7 +210,7 @@ export default class NavBar extends React.Component {
                     onClick={this.state.isOpen
                       ? this.toggle
                       : null}>
-                    Team
+                    About Us
                   </RRNavLink>
                 </NavItem>
               </LinkContainer>

@@ -140,7 +140,6 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Ian')}>
                   <div className='fluid-container'>
                     <div className='portrait-container'>
-                      {/*<Avatar src={IanImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={IanImage} />
                     </div>
                     <h4 className='team-name'>Ian Hunt</h4>
@@ -177,7 +176,6 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Ron')}>
                   <div className='fluid-container'>
                     <div className='portrait-container'>
-                      {/*<Avatar src={RonImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={RonImage} />
                     </div>
                     <h4 className='team-name'>Ron Zargoza</h4>
@@ -234,7 +232,6 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Andy')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      {/*<Avatar src={AndyImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={AndyImage} />
                     </div>
                     <h4 className='team-name'>Andy Hieke</h4>
@@ -297,7 +294,6 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Joseph')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      {/*<Avatar src={JosephImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={JosephImage} />
                     </div>
                     <h4 className='team-name'>Joseph Walters</h4>
@@ -358,7 +354,6 @@ export default class Team extends React.Component {
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Colter')}>
                   <div className='team-detail-container'>
                     <div className='portrait-container'>
-                      {/*<Avatar src={ColterImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={ColterImage} />
                     </div>
                     <h4 className='team-name'>Colter Hochstetler</h4>
@@ -389,9 +384,7 @@ export default class Team extends React.Component {
               <div className='row'>
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Dylan')}>
                   <div className='team-detail-container'>
-
                     <div className='portrait-container'>
-                      {/*<Avatar src={DylanImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={DylanImage} />
                     </div>
                     <h4 className='team-name'>Dylan Kahn</h4>
@@ -413,9 +406,7 @@ export default class Team extends React.Component {
 
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Travis')}>
                   <div className='team-detail-container'>
-
                     <div className='portrait-container'>
-                      {/*<Avatar src={TravisImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={TravisImage} />
                     </div>
                     <h4 className='team-name'>Travis Toler</h4>
@@ -432,15 +423,12 @@ export default class Team extends React.Component {
                           basedOn='letters' />
                       }
                     </div>
-
                   </div>
                 </div>
 
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Thomas')}>
                   <div className='team-detail-container'>
-
                     <div className='portrait-container'>
-                      {/*<Avatar src={ThomasImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={ThomasImage} />
                     </div>
                     <h4 className='team-name'>Thomas Labonte</h4>
@@ -457,15 +445,12 @@ export default class Team extends React.Component {
                           basedOn='letters' />
                       }
                     </div>
-
                   </div>
                 </div>
 
                 <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Theo')}>
                   <div className='team-detail-container'>
-
                     <div className='portrait-container'>
-                      {/*<Avatar src={TheoImage} size='350' round={true}/>*/}
                       <img className='team-portrait rounded-circle' src={TheoImage} />
                     </div>
                     <h4 className='team-name'>Theo Mikkelsen</h4>
