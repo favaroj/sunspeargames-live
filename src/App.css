@@ -73,7 +73,7 @@ body {
     font-weight: 450;
     color: black;
     padding: 0px;
-    padding-right: 10px;
+    padding-right: 5%;
     text-decoration: none;
 }
 
@@ -103,6 +103,10 @@ body {
 
 .navbar-brand {
     padding-left: 20px;
+}
+
+#navbar-logo {
+    width: auto;
 }
 
 #nav-brand:hover {
@@ -272,6 +276,20 @@ img {
     -ms-transform: scale(0.6);
     -o-transform: scale(0.6);
     transform: scale(0.6);
+}
+
+.home-content-logo-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content-text {
+    margin: 0px;
+    letter-spacing: 0.15rem;
+    line-height: 2.0rem;
+    font-family: Roboto-Regular;
 }
 
 .no-js .home-main-content {
@@ -842,6 +860,16 @@ iframe {
 }
 
 /* ========================================================================
+   =================================FONTS==================================
+   ========================================================================
+*/
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: local("Roboto-Regular"), url(./Assets/fonts/Roboto-Regular.woff2) format('woff');
+}
+
+/* ========================================================================
    =================================OVERLAY================================
    ======================================================================== 
 */
@@ -1368,7 +1396,7 @@ input[type="color"],
 .parallax-window-talmetra {
     min-height: 400px;
     background: transparent;
-    background: url(./Assets/img/splash-talmetra-celebrate.jpg) no-repeat center top fixed;
+    background: url(./Assets/img/minified/header-bg-scaled-min.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
