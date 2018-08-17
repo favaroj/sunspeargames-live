@@ -21,16 +21,32 @@ class Consulting extends Component {
       consultDesignImage: ConsultDesign,
       consultBalanceImage: ConsultBalance,
       consultEducationImage: ConsultEducation,
-      consultText: null
+      consultText: null,
+      width: 0,
+      height: 0,
+      showDesignDiv: false
     }
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
     this.handleFocusDiv = this.handleFocusDiv.bind(this)
     this.focusDiv = React.createRef()
+    this.updateWindowDimensions = this
+        .updateWindowDimensions
+        .bind(this);
+    this.handlePress = this.handlePress.bind(this)
   }
 
-  componentDidMount () {
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({width: window.innerWidth, height: window.innerHeight});
   }
   handleFocusDiv () {
     const textDivNode = ReactDOM.findDOMNode(this.refs.focusDiv)
@@ -89,6 +105,41 @@ class Consulting extends Component {
     }
   }
 
+  handlePress (component) {
+    switch (component) {
+      case 'Design':
+        if (this.state.showDesignDiv) {
+          this.setState({
+            consultDesignImage: ConsultDesign,
+            consultText: null,
+            showDesignDiv: false
+          })
+        } else {
+          this.setState({
+            consultDesignImage: ConsultDesignHover,
+            consultText: 'Design',
+            showDesignDiv: true
+          })
+        }
+
+        break
+
+      case 'Balance':
+        this.setState({
+          consultBalanceImage: ConsultBalance,
+          consultText: null
+        })
+        break
+
+      case 'Education':
+        this.setState({
+          consultEducationImage: ConsultEducation,
+          consultText: null
+        })
+        break
+    }
+  }
+
   render () {
     return (
       <div className='App'>
@@ -97,9 +148,9 @@ class Consulting extends Component {
             <h1>Consulting</h1>
             <hr className='consulting-hr' />
           </div>
-          <div className='consulting-container'>
-
-            <ScrollAnimation animateIn='fadeInRight'>
+          {this.state.width > 768
+              ? <div className='consulting-container'>
+             <ScrollAnimation animateIn='fadeInRight'>
               <div className='' >
                 <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Design')} onMouseLeave={() => this.handleMouseLeave('Design')}/>
               </div>
@@ -116,10 +167,38 @@ class Consulting extends Component {
                 <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}/>
               </div>
             </ScrollAnimation>
+                <div className='consulting-text-container' ref='focusDiv'>
+                  {this.state.consultText}
+                </div>
           </div>
-          <div className='consulting-text-container' ref='focusDiv'>
-            {this.state.consultText}
-          </div>
+              : <div className='consulting-container'>
+                <ScrollAnimation animateIn='fadeInRight'>
+                  <div className='' >
+                    <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Design')} />
+                  </div>
+                </ScrollAnimation>
+                {this.state.showDesignDiv
+                ? <div className='consulting-text-container' ref='focusDiv'>
+                  {this.state.consultText}
+                 </div>
+                    : null}
+                <ScrollAnimation animateIn='fadeInRight'>
+                  <div className='' >
+                    <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')}/>
+                  </div>
+                </ScrollAnimation>
+
+                <ScrollAnimation animateIn='fadeInRight'>
+                  <div className='' >
+                    <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}/>
+                  </div>
+                </ScrollAnimation>
+                <div className='consulting-text-container' ref='focusDiv'>
+                  {this.state.consultText}
+                </div>
+              </div>
+          }
+
         </section>
 
         <section id='contact' className='contact'>

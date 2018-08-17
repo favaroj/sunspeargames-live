@@ -1017,6 +1017,15 @@ ul {
         padding-bottom: 10px;
         padding-right: 0px;
     }
+    .home-content h2 {
+        padding-top: 6px!important;
+    }
+    .home-content h1 {
+        padding-left: 4px;
+    }
+    .team-description-outer-container {
+        margin: 5% 5%;
+    }
 
 }
 

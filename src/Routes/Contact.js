@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './../App.css'
 import IanImage from '../Assets/img/minified/ian2.png'
 import DylanImage from '../Assets/img/minified/dylan.png'
+import Footer from './../Components/Footer'
 
 export default class NavBar extends React.Component {
   constructor (props) {
@@ -97,6 +98,7 @@ export default class NavBar extends React.Component {
             </div>
           </div>
         </section>
+        <Footer/>
       </div>
     )
   }

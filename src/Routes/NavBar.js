@@ -166,7 +166,9 @@ export default class NavBar extends React.Component {
           className='navbar'>
           <NavbarBrand id='nav-brand'>
             <LinkContainer to='/' onClick={() => this.setActive('Home')}>
-              <img id='navbar-logo' src={SunspearLogo} />
+              <img id='navbar-logo' src={SunspearLogo} onClick={this.state.isOpen
+                  ? this.toggle
+                  : null}/>
             </LinkContainer>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
