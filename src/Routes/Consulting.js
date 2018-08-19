@@ -6,8 +6,9 @@ import ConsultBalance from './../Assets/img/icon-consult-balance.png'
 import ConsultBalanceHover from './../Assets/img/icon-consult-balance-hover.png'
 import ConsultEducation from './../Assets/img/icon-consult-educate.png'
 import ConsultEducationHover from './../Assets/img/icon-consult-educate-hover.png'
-import IanImage from './../Assets/img/minified/ian2.png'
-import DylanImage from './../Assets/img/minified/dylan.png'
+import IanImage from './../Assets/img/team-portrait-ian.png'
+import DylanImage from './../Assets/img/team-portrait-dylan.png'
+import ContactForm from './../Components/ContactForm'
 import Footer from './../Components/Footer'
 import ScrollAnimation from 'react-animate-on-scroll'
 import scrollToComponent from 'react-scroll-to-component';
@@ -54,6 +55,7 @@ class Consulting extends Component {
     /*const textDivNode = ReactDOM.findDOMNode(this.refs.focusDiv)
     window.scrollTo(0, 200)*/
   }
+
   handleMouseEnter (component) {
     switch (component) {
       case 'Design':
@@ -110,34 +112,33 @@ class Consulting extends Component {
   handlePress (component) {
     switch (component) {
       case 'Design':
-        if (this.state.showDesignDiv) {
-          this.setState({
-            consultDesignImage: ConsultDesign,
-            consultText: null,
-            showDesignDiv: false
-          })
-        } else {
-          this.setState({
-            consultDesignImage: ConsultDesignHover,
-            consultText: 'Design',
-            showDesignDiv: true
-          })
-        }
-
+        this.setState({
+          consultDesignImage: ConsultDesignHover,
+          consultBalanceImage: ConsultBalance,
+          consultEducationImage: ConsultEducation,
+          consultText: <h1>Design</h1>
+        })
+        this.handleFocusDiv()
         break
 
       case 'Balance':
         this.setState({
-          consultBalanceImage: ConsultBalance,
-          consultText: null
+          consultBalanceImage: ConsultBalanceHover,
+          consultDesignImage: ConsultDesign,
+          consultEducationImage: ConsultEducation,
+          consultText: <h1>Balance</h1>
         })
+        this.handleFocusDiv()
         break
 
       case 'Education':
         this.setState({
-          consultEducationImage: ConsultEducation,
-          consultText: null
+          consultEducationImage: ConsultEducationHover,
+          consultDesignImage: ConsultDesign,
+          consultBalanceImage: ConsultBalance,
+          consultText: <h1>Education</h1>
         })
+        this.handleFocusDiv()
         break
     }
   }
@@ -176,34 +177,35 @@ class Consulting extends Component {
                 {this.state.consultText}
               </div>
             </div>
-            : <div className='consulting-container'>
+            : <div>
+              <div className='consulting-container'>
               <ScrollAnimation animateIn='fadeIn'>
-                <div className='' >
+                <div className='consult-img-container' >
                   <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Design')} />
-                </div>
-              </ScrollAnimation>
-              {this.state.showDesignDiv
-                ? <div className='consulting-text-container' ref='focusDiv'>
-                  {this.state.consultText}
-                </div>
-                : null}
-              <ScrollAnimation animateIn='fadeIn'>
-                <div className='' >
-                  <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')} />
                 </div>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn='fadeIn'>
-                <div className='' >
-                  <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')} />
+                <div className='consult-img-container' >
+                  <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Balance')} />
                 </div>
               </ScrollAnimation>
+
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='consult-img-container' >
+                  <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Education')} />
+                </div>
+              </ScrollAnimation>
+            </div>
+            <div className='consulting-text-container' ref='focusDiv'>
+              {this.state.consultText}
+            </div>
             </div>
           }
 
         </section>
 
-        <section id='contact' className='contact'>
+        {/*<section id='contact' className='contact'>
           <div
             className='fluid-container overlay sectionsContact'
             style={{
@@ -229,9 +231,9 @@ class Consulting extends Component {
                     <div className='contact-details'>
                       <img src={IanImage} id='contact-image' className='padding20 ' />
                       <h4>Ian Hunt</h4>
-                      <h6>CEO</h6>
-                      <p>PHONE: +1 805 284 4179</p>
-                      <p>EMAIL: ihunt@sunspeargames.com</p>
+                      <h6>President</h6>
+                      <p>+1 805 284 4179</p>
+                      <p>ihunt@sunspeargames.com</p>
                     </div>
                   </div>
                 </div>
@@ -240,9 +242,9 @@ class Consulting extends Component {
                     <div className='contact-details'>
                       <img id='contact-image' src={DylanImage} className='padding20' />
                       <h4>Dylan Kahn</h4>
-                      <h6>Business Development</h6>
-                      <p>PHONE: +1 406 465 3449</p>
-                      <p>EMAIL: dkahn@sunspeargames.com</p>
+                      <h6>Creative Lead</h6>
+                      <p>+1 406 465 3449</p>
+                      <p>dkahn@sunspeargames.com</p>
                     </div>
                   </div>
                 </div>
@@ -280,8 +282,8 @@ class Consulting extends Component {
               </div>
             </div>
           </div>
-        </section>
-
+        </section>*/}
+        <ContactForm />
         <Footer />
       </div>
     )

@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import './../App.css'
-import './../Components/ContactForm'
-import ContactForm from '../Components/ContactForm'
-import Footer from '../Components/Footer'
+import IanImage from './../Assets/img/team-portrait-ian.png'
+import DylanImage from './../Assets/img/team-portrait-dylan.png'
 
-export default class Contact extends React.Component {
+export default class ContactForm extends React.Component {
   constructor (props) {
     super(props)
 
@@ -20,8 +19,7 @@ export default class Contact extends React.Component {
   render () {
     return (
       <div>
-        <ContactForm />
-        {/*<section id='contact' className='contact'>
+        <section id='contact' className='contact'>
           <div
             className='fluid-container overlay sectionsContact'
             style={{
@@ -47,9 +45,9 @@ export default class Contact extends React.Component {
                     <div className='contact-details'>
                       <img src={IanImage} id='contact-image' className='padding20 ' />
                       <h4>Ian Hunt</h4>
-                      <h6>CEO</h6>
-                      <p>PHONE: +1 805 284 4179</p>
-                      <p>EMAIL: ihunt@sunspeargames.com</p>
+                      <h6>President</h6>
+                      <p>+1 805 284 4179</p>
+                      <p>ihunt@sunspeargames.com</p>
                     </div>
                   </div>
                 </div>
@@ -58,9 +56,9 @@ export default class Contact extends React.Component {
                     <div className='contact-details'>
                       <img id='contact-image' src={DylanImage} className='padding20' />
                       <h4>Dylan Kahn</h4>
-                      <h6>Business Development</h6>
-                      <p>PHONE: +1 406 465 3449</p>
-                      <p>EMAIL: dkahn@sunspeargames.com</p>
+                      <h6>Creative Lead</h6>
+                      <p>+1 406 465 3449</p>
+                      <p>dkahn@sunspeargames.com</p>
                     </div>
                   </div>
                 </div>
@@ -91,15 +89,14 @@ export default class Contact extends React.Component {
                         placeholder='Message' />
                     </div>
                     <a type='submit' className='btn-default' id='formSubmitBtn'>
-                            SEND
+                      SEND
                     </a>
                   </form>
                 </div>
               </div>
             </div>
           </div>
-        </section>*/}
-        <Footer/>
+        </section>
       </div>
     )
   }

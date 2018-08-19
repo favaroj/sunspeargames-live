@@ -583,6 +583,10 @@ section .subtitle-half h5 {
     color: white !important;
 }
 
+#formSubmitBtn:hover {
+    cursor: pointer;
+}
+
 #form-group-message {
     height: 15%;
 }
@@ -795,7 +799,7 @@ img.react-parallax-bgimage {
     position: relative;
     overflow: hidden;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #consult-img {
@@ -1052,7 +1056,7 @@ ul {
     }
     .consulting-container {
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
    
         padding-bottom: 50px;
         position: relative;
@@ -1060,9 +1064,12 @@ ul {
         padding-top: 30px;
     }
     #consult-img {
-        width: 10.5em;
+        width: 6.5em;
         margin-bottom: 10px;
         /* height: 13.4em; */
+    }
+    .consult-img-container {
+        padding: 5px;
     }
     .ml-auto, .mx-auto {
         padding-right: 0px;
