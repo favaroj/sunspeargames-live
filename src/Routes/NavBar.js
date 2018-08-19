@@ -100,7 +100,7 @@ export default class NavBar extends React.Component {
           contactColor: 'black'
         })
         break
-      case 'Team':
+      case 'About':
         this.setState({
           homeColor: 'black',
           immortalColor: 'black',
@@ -131,7 +131,7 @@ export default class NavBar extends React.Component {
   }
   static setLinksFromHome (Location) {
     switch (Location) {
-      case 'Team':
+      case 'About':
         this.setState({
           homeColor: 'black',
           immortalColor: 'black',
@@ -201,10 +201,10 @@ export default class NavBar extends React.Component {
                   </RRNavLink>
                 </NavItem>
               </LinkContainer>
-              <LinkContainer to='/Team'>
+              <LinkContainer to='/About'>
                 <NavItem id='nav-item'>
                   <RRNavLink
-                    to='/Team'
+                    to='/About'
                     activeStyle={{color: 'red'}}
                     id='nav-link-style'
                     onClick={this.state.isOpen

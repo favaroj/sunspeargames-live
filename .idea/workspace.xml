@@ -4,9 +4,16 @@
     <list default="true" id="a2ce552b-315c-43e8-884f-0883c2ed8c76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/img/icon-consult-design.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/icon-consult-design.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-dylan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/img/team-portrait-ian.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/img/team-portrait-ian.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SplashRootWitch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SplashRootWitch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Consulting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Consulting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/About.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,46 +65,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+            <state relative-caret-position="301">
+              <caret line="796" column="19" lean-forward="true" selection-start-line="796" selection-start-column="19" selection-end-line="796" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Team.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+      <file leaf-file-name="Consulting.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Routes/Consulting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="412" column="40" lean-forward="true" selection-start-line="412" selection-start-column="40" selection-end-line="412" selection-end-column="40" />
+            <state relative-caret-position="377">
+              <caret line="176" column="20" lean-forward="true" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Routes/NavBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="212" column="28" lean-forward="true" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Routes/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="n#!!block;n#handleMouseEnter#0;n#Consulting#0" />
+                <element signature="n#!!block;n#handleMouseLeave#0;n#Consulting#0" />
+                <element signature="n#!!block;n#handlePress#0;n#Consulting#0" />
               </folding>
             </state>
           </provider>
@@ -117,13 +103,20 @@
       <find>img</find>
       <find>nav</find>
       <find>h1-re</find>
-      <find>header</find>
       <find>consult</find>
       <find>dot</find>
-      <find>media</find>
       <find>parallax</find>
-      <find>home</find>
+      <find>Team</find>
       <find>nav-item</find>
+      <find>home</find>
+      <find>About</find>
+      <find>root</find>
+      <find>header</find>
+      <find>media</find>
+      <find>about</find>
+      <find>team-description-outer-container</find>
+      <find>#nav-item</find>
+      <find>consulting-co</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,18 +125,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Routes/Routes.js" />
         <option value="$PROJECT_DIR$/src/Routes/Immortal.js" />
-        <option value="$PROJECT_DIR$/src/Components/SplashRootWitch.js" />
-        <option value="$PROJECT_DIR$/src/Components/Header.js" />
         <option value="$PROJECT_DIR$/src/Routes/Contact.js" />
-        <option value="$PROJECT_DIR$/src/Routes/Consulting.js" />
         <option value="$PROJECT_DIR$/src/Components/Footer.js" />
         <option value="$PROJECT_DIR$/src/Components/Banner.js" />
-        <option value="$PROJECT_DIR$/src/Routes/Home.js" />
         <option value="$PROJECT_DIR$/src/Routes/Team.js" />
         <option value="$PROJECT_DIR$/src/Routes/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/Routes/Routes.js" />
+        <option value="$PROJECT_DIR$/src/Components/SplashRootWitch.js" />
+        <option value="$PROJECT_DIR$/src/Components/Header.js" />
+        <option value="$PROJECT_DIR$/src/Routes/Home.js" />
+        <option value="$PROJECT_DIR$/src/Routes/About.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/Routes/Consulting.js" />
       </list>
     </option>
   </component>
@@ -185,6 +179,12 @@
               <item name="sunspeargames-live" type="b2602c69:ProjectViewProjectNode" />
               <item name="sunspeargames-live" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sunspeargames-live" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sunspeargames-live" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sunspeargames-live" type="b2602c69:ProjectViewProjectNode" />
@@ -291,12 +291,12 @@
       <workItem from="1533687498003" duration="5517000" />
       <workItem from="1533865601210" duration="8925000" />
       <workItem from="1534044487269" duration="3692000" />
-      <workItem from="1534475443808" duration="6854000" />
+      <workItem from="1534475443808" duration="23462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57638000" />
+    <option name="totallyTimeSpent" value="74246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -307,16 +307,17 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32827586" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32827586" />
-      <window_info anchor="right" id="Terminal" order="9" visible="true" weight="0.27083334" />
+      <window_info active="true" anchor="right" id="Terminal" order="9" visible="true" weight="0.19140625" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24283855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24283855" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.32965517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="5" />
@@ -346,7 +347,6 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info id="Capture Tool" order="4" />
-      <window_info anchor="bottom" id="Find" order="4" />
       <window_info active="true" anchor="right" id="Terminal" order="9" visible="true" weight="0.27147487" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -366,7 +366,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+    <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7939">
           <caret line="467" column="39" selection-start-line="467" selection-start-column="39" selection-end-line="467" selection-end-column="39" />
@@ -380,7 +380,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+    <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
@@ -482,7 +482,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+    <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="299" column="24" selection-start-line="299" selection-start-column="24" selection-end-line="299" selection-end-column="24" />
@@ -581,7 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+    <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="467" column="39" selection-start-line="467" selection-start-column="39" selection-end-line="467" selection-end-column="39" />
@@ -595,34 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Immortal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/SplashRootWitch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="65" column="51" lean-forward="true" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,19 +608,6 @@
           <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Consulting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="119" column="34" lean-forward="true" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!block;n#handleMouseEnter#0;n#Consulting#0" />
-            <element signature="n#!!block;n#handleMouseLeave#0;n#Consulting#0" />
-            <element signature="e#3292#4437#0" />
-            <element signature="e#4569#7625#0" />
           </folding>
         </state>
       </provider>
@@ -659,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="76" />
-          <folding>
-            <element signature="e#183#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Banner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -679,40 +632,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/Routes/Routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="19" lean-forward="true" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Routes/Team.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/SplashRootWitch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="412" column="40" lean-forward="true" selection-start-line="412" selection-start-column="40" selection-end-line="412" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="1" column="90" lean-forward="true" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="90" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#198#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes/Immortal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="62" column="16" lean-forward="true" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="74" />
+          <folding>
+            <element signature="e#183#205#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Routes/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="212" column="28" lean-forward="true" selection-start-line="212" selection-start-column="28" selection-end-line="212" selection-end-column="28" />
+        <state relative-caret-position="-748">
+          <caret line="81" column="3" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="81" selection-end-column="3" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="200" column="46" lean-forward="true" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#2900#3281#0" />
+            <element signature="e#4965#6858#0" />
+            <element signature="e#5166#5897#0" />
+            <element signature="e#5924#6844#0" />
+            <element signature="e#7625#8347#0" />
+            <element signature="e#8376#9282#0" />
+            <element signature="e#10702#11317#0" />
+            <element signature="e#14452#16099#0" />
+            <element signature="e#16128#17865#0" />
+            <element signature="e#19479#20277#0" />
+            <element signature="e#21728#22361#0" />
+            <element signature="e#23229#24985#0" />
+            <element signature="e#25014#26720#0" />
+            <element signature="e#27525#29409#0" />
+            <element signature="e#29438#30368#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
+        <state relative-caret-position="301">
+          <caret line="796" column="19" lean-forward="true" selection-start-line="796" selection-start-column="19" selection-end-line="796" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routes/Consulting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="176" column="20" lean-forward="true" selection-start-line="176" selection-start-column="20" selection-end-line="176" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="n#!!block;n#handleMouseEnter#0;n#Consulting#0" />
+            <element signature="n#!!block;n#handleMouseLeave#0;n#Consulting#0" />
+            <element signature="n#!!block;n#handlePress#0;n#Consulting#0" />
+          </folding>
         </state>
       </provider>
     </entry>

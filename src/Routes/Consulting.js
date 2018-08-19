@@ -10,6 +10,7 @@ import IanImage from './../Assets/img/minified/ian2.png'
 import DylanImage from './../Assets/img/minified/dylan.png'
 import Footer from './../Components/Footer'
 import ScrollAnimation from 'react-animate-on-scroll'
+import scrollToComponent from 'react-scroll-to-component';
 import 'animate.css/animate.min.css'
 import './../Assets/css/font-awesome.min.css'
 import './../App.css'
@@ -21,7 +22,7 @@ class Consulting extends Component {
       consultDesignImage: ConsultDesign,
       consultBalanceImage: ConsultBalance,
       consultEducationImage: ConsultEducation,
-      consultText: null,
+      consultText: <h1>Design</h1>,
       width: 0,
       height: 0,
       showDesignDiv: false
@@ -31,26 +32,27 @@ class Consulting extends Component {
     this.handleFocusDiv = this.handleFocusDiv.bind(this)
     this.focusDiv = React.createRef()
     this.updateWindowDimensions = this
-        .updateWindowDimensions
-        .bind(this);
+      .updateWindowDimensions
+      .bind(this)
     this.handlePress = this.handlePress.bind(this)
   }
 
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+  componentDidMount () {
+    this.updateWindowDimensions()
+    window.addEventListener('resize', this.updateWindowDimensions)
+    /*scrollToComponent(this.textContainer, { offset: 200, align: 'middle', duration: 1500, ease:'linear'});*/
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.updateWindowDimensions)
   }
 
-  updateWindowDimensions() {
-    this.setState({width: window.innerWidth, height: window.innerHeight});
+  updateWindowDimensions () {
+    this.setState({width: window.innerWidth, height: window.innerHeight})
   }
   handleFocusDiv () {
-    const textDivNode = ReactDOM.findDOMNode(this.refs.focusDiv)
-    window.scrollTo(0, 200)
+    /*const textDivNode = ReactDOM.findDOMNode(this.refs.focusDiv)
+    window.scrollTo(0, 200)*/
   }
   handleMouseEnter (component) {
     switch (component) {
@@ -85,21 +87,21 @@ class Consulting extends Component {
       case 'Design':
         this.setState({
           consultDesignImage: ConsultDesign,
-          consultText: null
+          consultText: <h1>Design</h1>
         })
         break
 
       case 'Balance':
         this.setState({
           consultBalanceImage: ConsultBalance,
-          consultText: null
+          consultText: <h1>Balance</h1>
         })
         break
 
       case 'Education':
         this.setState({
           consultEducationImage: ConsultEducation,
-          consultText: null
+          consultText: <h1>Education</h1>
         })
         break
     }
@@ -149,54 +151,54 @@ class Consulting extends Component {
             <hr className='consulting-hr' />
           </div>
           {this.state.width > 768
-              ? <div className='consulting-container'>
-             <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' >
-                <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Design')} onMouseLeave={() => this.handleMouseLeave('Design')}/>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' >
-                <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')}/>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation animateIn='fadeInRight'>
-              <div className='' >
-                <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}/>
-              </div>
-            </ScrollAnimation>
-                <div className='consulting-text-container' ref='focusDiv'>
-                  {this.state.consultText}
+            ? <div>
+            <div className='consulting-container'>
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Design')} onMouseLeave={() => this.handleMouseLeave('Design')} />
                 </div>
-          </div>
-              : <div className='consulting-container'>
-                <ScrollAnimation animateIn='fadeInRight'>
-                  <div className='' >
-                    <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Design')} />
-                  </div>
-                </ScrollAnimation>
-                {this.state.showDesignDiv
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')} />
+                </div>
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')} />
+                </div>
+              </ScrollAnimation>
+
+            </div>
+              <div className='consulting-text-container' ref='focusDiv'>
+                {this.state.consultText}
+              </div>
+            </div>
+            : <div className='consulting-container'>
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultDesignImage} className='rounded-circle' id='consult-img' onClick={() => this.handlePress('Design')} />
+                </div>
+              </ScrollAnimation>
+              {this.state.showDesignDiv
                 ? <div className='consulting-text-container' ref='focusDiv'>
                   {this.state.consultText}
-                 </div>
-                    : null}
-                <ScrollAnimation animateIn='fadeInRight'>
-                  <div className='' >
-                    <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')}/>
-                  </div>
-                </ScrollAnimation>
-
-                <ScrollAnimation animateIn='fadeInRight'>
-                  <div className='' >
-                    <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')}/>
-                  </div>
-                </ScrollAnimation>
-                <div className='consulting-text-container' ref='focusDiv'>
-                  {this.state.consultText}
                 </div>
-              </div>
+                : null}
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultBalanceImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Balance')} onMouseLeave={() => this.handleMouseLeave('Balance')} />
+                </div>
+              </ScrollAnimation>
+
+              <ScrollAnimation animateIn='fadeIn'>
+                <div className='' >
+                  <img src={this.state.consultEducationImage} className='rounded-circle' id='consult-img' onMouseEnter={() => this.handleMouseEnter('Education')} onMouseLeave={() => this.handleMouseLeave('Education')} />
+                </div>
+              </ScrollAnimation>
+            </div>
           }
 
         </section>

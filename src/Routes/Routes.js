@@ -4,7 +4,7 @@ import Navbar from "./NavBar";
 import ScrollToTop from './../Components/ScrollToTop';
 import Immortal from "./Immortal";
 import Home from "./Home";
-import Team from "./Team";
+import About from "./About";
 import Consulting from "./Consulting";
 import Contact from "./Contact";
 import Live from "./Live";
@@ -16,14 +16,14 @@ export default class Routes extends Component {
       <Router basename={process.env.PUBLIC_URL}>
         <ScrollToTop>
         <div>
-          <Navbar/>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/Immortal" component={Immortal}/>
-            <Route path="/Team" component={Team}/>
+            <Route path="/About" component={About}/>
             <Route path="/Consulting" component={Consulting}/>
             <Route path="/Contact" component={Contact}/>
-            {/*<Route path="/Live" component={Live}/>*/}
+            {/* <Route path="/Live" component={Live}/> */}
           </Switch>
         </div>
         </ScrollToTop>

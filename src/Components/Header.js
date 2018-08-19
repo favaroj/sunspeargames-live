@@ -62,10 +62,8 @@ export default class Header extends Component {
                 </div>
               </div>
             </Parallax>
-          : <Parallax
-            bgImage={HeaderImage}
-            strength={50}
-            className="react-parallax-bgimage-header">
+          : <div
+            className="header-mobile-container">
             <div className="anti-shadow react-parallax-bgimage-header">
               <div className="sections set-zindex-top">
                 <div className="fluid-container set-zindex-top">
@@ -86,7 +84,7 @@ export default class Header extends Component {
                 </div>
               </div>
             </div>
-          </Parallax>}
+          </div>}
 
         {/*<div
           id="home"

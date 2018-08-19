@@ -73,7 +73,7 @@ body {
     font-weight: 450;
     color: black;
     padding: 0px;
-    padding-right: 5%;
+    padding-right: 7.5%;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -126,6 +126,15 @@ body {
    =================================HEADER===================================
    ==========================================================================
 */
+
+.react-parallax-bgimage-header {
+    /* padding-top: 5px; */
+    max-height: 60%!important;
+}
+.header-mobile-container {
+    background: url(./Assets/img/minified/header-bg-scaled-min.jpg) fixed center;
+    background-size: cover;
+}
 
 #h2-responsive {
     padding-top: 10px;
@@ -205,6 +214,11 @@ img {
 */
 
 /* .home-wrap h1, */
+
+.sunspear-gold-logo {
+    width: 65%;
+    margin-right: 97.5%;
+}
 
 .home-wrap h2,
 .home-wrap h3,
@@ -304,24 +318,6 @@ img {
     height: 100%;
     z-index: 20;
     background: rgba(0, 0, 0, 0);
-}
-
-/* ==========================================================================
-   =================================ABOUT US=================================
-   ========================================================================== 
-*/
-
-.about-content {
-    margin-top: 20px;
-}
-
-.about-content h4 {
-    font-size: 18px;
-    font-family: "robotobold";
-}
-
-.about-content a {
-    margin-top: 10px;
 }
 
 /* ==========================================================================
@@ -628,9 +624,29 @@ section .subtitle-half h5 {
 }
 
 /* ========================================================================
-   =================================TEAM================================
+   =================================ABOUT US================================
    ======================================================================== 
 */
+
+.about-content {
+
+}
+
+.about-content h4 {
+    font-size: 18px;
+    font-family: "robotobold";
+}
+
+.about-content a {
+    margin-top: 10px;
+}
+
+.about-text-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
 
 .team-heading {
 	margin-top:60px;
@@ -746,6 +762,15 @@ section .subtitle-half h5 {
 	font-weight:550;
 }
 
+img.react-parallax-bgimage {
+    height: auto!important;
+}
+
+.root-witch-mobile-container {
+    background: url(./Assets/img/minified/splash-rootwitch-scaled-min.jpg) fixed center;
+    background-size: cover;
+}
+
 /* ========================================================================
    =================================CONSULTING================================
    ======================================================================== 
@@ -769,7 +794,7 @@ section .subtitle-half h5 {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 100px;
 }
 
@@ -981,7 +1006,7 @@ ul {
         max-height: 60%!important;
     }
     .sections {
-         padding-bottom: 145px; 
+         padding-bottom: 185px;
     }
     #contact-image {
         height: auto!important;
@@ -1042,6 +1067,9 @@ ul {
     .ml-auto, .mx-auto {
         padding-right: 0px;
     }
+    #navbar-logo {
+        width: 40px;
+    }
     #nav-item {
         padding-bottom: 10px;
         padding-right: 0px;
@@ -1055,7 +1083,12 @@ ul {
     .team-description-outer-container {
         margin: 5% 5%;
     }
-
+    .sunspear-gold-logo {
+        margin-right: 0px;
+    }
+    img.react-parallax-bgimage {
+        height: 100%!important;
+    }
 }
 
 @media only screen and (min-width: 1680px) {

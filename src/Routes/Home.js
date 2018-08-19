@@ -33,18 +33,15 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
         <section id='about' className='fluid-container home-content-logo-container'>
           <div className='row'>
-            <div className='col-md-4 padding30'>
+            <div className='col-md-3 padding30'>
               <div className='about-photo'>
                 <img
                   src={SunspearGoldLogo}
+                  className='sunspear-gold-logo'
                   alt='SunSpear Games'
-                  style={{
-                    width: '65%',
-                    marginRight: '97.5%'
-                  }} />
+                />
               </div>
             </div>
             <div>
@@ -55,21 +52,19 @@ class Home extends Component {
             </div>
           </div>
         </section>
-
         <section id='index-learn-more' className='learn-more'>
           <div className='overlay sections-quotes anti-shadow'>
             <ScrollAnimation animateIn='fadeIn'>
-              <NavLink to='/Team' activeStyle={{color: 'red'}}>
+              <NavLink to='/Immortal' activeStyle={{color: 'red'}}>
                 <div className='dot-div'>
-                  <p className='dot-text'>About Us</p>
+                  <p className='dot-text'>IMMORTAL</p>
                 </div>
               </NavLink>
             </ScrollAnimation>
-
             <ScrollAnimation animateIn='fadeIn'>
-              <NavLink to='/Immortal' activeStyle={{color: 'red'}}>
-                <div className='dot-div' onClick={NavBar.setLinksFromHome.bind(this, 'Immortal')}>
-                  <p className='dot-text'>IMMORTAL</p>
+              <NavLink to='/About' activeStyle={{color: 'red'}}>
+                <div className='dot-div'>
+                  <p className='dot-text'>About Us</p>
                 </div>
               </NavLink>
             </ScrollAnimation>
