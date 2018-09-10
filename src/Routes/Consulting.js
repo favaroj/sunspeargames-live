@@ -11,10 +11,14 @@ import DylanImage from './../Assets/img/team-portrait-dylan.png'
 import ContactForm from './../Components/ContactForm'
 import Footer from './../Components/Footer'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Icon from 'react-icons-kit';
+import {angleDoubleLeft} from 'react-icons-kit/fa/angleDoubleLeft'
+import {angleDoubleRight} from 'react-icons-kit/fa/angleDoubleRight'
 import scrollToComponent from 'react-scroll-to-component';
 import 'animate.css/animate.min.css'
 import './../Assets/css/font-awesome.min.css'
 import './../App.css'
+import { close } from 'react-icons-kit/fa/close'
 
 class Consulting extends Component {
   constructor () {
@@ -23,7 +27,9 @@ class Consulting extends Component {
       consultDesignImage: ConsultDesign,
       consultBalanceImage: ConsultBalance,
       consultEducationImage: ConsultEducation,
-      consultText: <h1>Design</h1>,
+      consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Design</h1>
+        <p className='consulting-text'>Good design is essential to a successful product. Our talent covers the full
+          spectrum of design from UX review to R&D. Regardless of a project’s scale or needs, SunSpear can help.</p></div>,
       width: 0,
       height: 0,
       showDesignDiv: false
@@ -61,7 +67,9 @@ class Consulting extends Component {
       case 'Design':
         this.setState({
           consultDesignImage: ConsultDesignHover,
-          consultText: <h1>Design</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Design</h1>
+            <p className='consulting-text'>Good design is essential to a successful product. Our talent covers the full
+              spectrum of design from UX review to R&D. Regardless of a project’s scale or needs, SunSpear can help.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -69,7 +77,9 @@ class Consulting extends Component {
       case 'Balance':
         this.setState({
           consultBalanceImage: ConsultBalanceHover,
-          consultText: <h1>Balance</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Balance and Analysis</h1>
+            <p className='consulting-text'>SunSpear uses its experience in multiplayer, competitive game design to support high-value IPs
+              with balance support and post-launch analysis.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -77,7 +87,11 @@ class Consulting extends Component {
       case 'Education':
         this.setState({
           consultEducationImage: ConsultEducationHover,
-          consultText: <h1>Education</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Education</h1>
+            <p className='consulting-text'>As digital games become multigenerational, design education has become vital to the health of
+              developer communities. SunSpear is committed to developing strong developer communities
+              around the world, offering educational services on ‘Criteria-based Design’ and iterative culture.
+              Our workshops offer in-depth analysis, personal engagement, and ongoing support.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -89,21 +103,29 @@ class Consulting extends Component {
       case 'Design':
         this.setState({
           consultDesignImage: ConsultDesign,
-          consultText: <h1>Design</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Design</h1>
+            <p className='consulting-text'>Good design is essential to a successful product. Our talent covers the full
+              spectrum of design from UX review to R&D. Regardless of a project’s scale or needs, SunSpear can help.</p></div>
         })
         break
 
       case 'Balance':
         this.setState({
           consultBalanceImage: ConsultBalance,
-          consultText: <h1>Balance</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Balance and Analysis</h1>
+            <p className='consulting-text'>SunSpear uses its experience in multiplayer, competitive game design to support high-value IPs
+              with balance support and post-launch analysis.</p></div>
         })
         break
 
       case 'Education':
         this.setState({
           consultEducationImage: ConsultEducation,
-          consultText: <h1>Education</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Education</h1>
+            <p className='consulting-text'>As digital games become multigenerational, design education has become vital to the health of
+              developer communities. SunSpear is committed to developing strong developer communities
+              around the world, offering educational services on ‘Criteria-based Design’ and iterative culture.
+              Our workshops offer in-depth analysis, personal engagement, and ongoing support.</p></div>
         })
         break
     }
@@ -116,7 +138,9 @@ class Consulting extends Component {
           consultDesignImage: ConsultDesignHover,
           consultBalanceImage: ConsultBalance,
           consultEducationImage: ConsultEducation,
-          consultText: <h1>Design</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Design</h1>
+            <p className='consulting-text'>Good design is essential to a successful product. Our talent covers the full
+              spectrum of design from UX review to R&D. Regardless of a project’s scale or needs, SunSpear can help.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -126,7 +150,9 @@ class Consulting extends Component {
           consultBalanceImage: ConsultBalanceHover,
           consultDesignImage: ConsultDesign,
           consultEducationImage: ConsultEducation,
-          consultText: <h1>Balance</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Balance and Analysis</h1>
+            <p className='consulting-text'>SunSpear uses its experience in multiplayer, competitive game design to support high-value IPs
+              with balance support and post-launch analysis.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -136,7 +162,11 @@ class Consulting extends Component {
           consultEducationImage: ConsultEducationHover,
           consultDesignImage: ConsultDesign,
           consultBalanceImage: ConsultBalance,
-          consultText: <h1>Education</h1>
+          consultText: <div className='consult-text-inner-container'><h1 className='consult-text-header'>Education</h1>
+            <p className='consulting-text'>As digital games become multigenerational, design education has become vital to the health of
+              developer communities. SunSpear is committed to developing strong developer communities
+              around the world, offering educational services on ‘Criteria-based Design’ and iterative culture.
+              Our workshops offer in-depth analysis, personal engagement, and ongoing support.</p></div>
         })
         this.handleFocusDiv()
         break
@@ -148,11 +178,14 @@ class Consulting extends Component {
       <div className='App'>
         <section>
           <div className='consulting-header'>
-            <h1>Consulting</h1>
+            <h1 className='consulting-header-text'>Consulting</h1>
             <hr className='consulting-hr' />
           </div>
           {this.state.width > 768
             ? <div>
+              <div className='consulting-sub-header-container'><h3 className='consulting-sub-header'>Better Games; Better Communities; By Design</h3></div>
+              <div className='consulting-icons-outer-container'><div className='consulting-icons-inner-container'><Icon icon={angleDoubleRight} size={30} className='consulting-angle-icon' /><Icon icon={angleDoubleLeft} size={30} className='consulting-angle-icon' /></div><hr style={{width: '30%'}} /><div className='consulting-icons-inner-container'><Icon icon={angleDoubleRight} size={30} className='consulting-angle-icon' /><Icon icon={angleDoubleLeft} size={30} className='consulting-angle-icon' /></div></div>
+              <div className='sunspear-services-header-container'><h1 className='sunspear-services-header'>SunSpear Services</h1></div><div className='sunspear-services-container'><p className='sunspear-services-text'>SunSpear’s core values are collaboration and community. To that end, we offer a range of consulting services to aid in the development of promising IPs and teams.</p></div>
             <div className='consulting-container'>
               <ScrollAnimation animateIn='fadeIn'>
                 <div className='' >
@@ -178,6 +211,9 @@ class Consulting extends Component {
               </div>
             </div>
             : <div>
+              <div className='consulting-sub-header-container'><h3 className='consulting-sub-header'>Better Games;</h3><h3 className='consulting-sub-header'>Better Communities;</h3><h3 className='consulting-sub-header'>By Design</h3></div>
+              <div className='consulting-icons-outer-container'><div className='consulting-icons-inner-container'><Icon icon={angleDoubleRight} size={30} className='consulting-angle-icon' /><Icon icon={angleDoubleLeft} size={30} className='consulting-angle-icon' /></div><hr style={{width: '30%'}} /><div className='consulting-icons-inner-container'><Icon icon={angleDoubleRight} size={30} className='consulting-angle-icon' /><Icon icon={angleDoubleLeft} size={30} className='consulting-angle-icon' /></div></div>
+              <div className='sunspear-services-header-container'><h1 className='sunspear-services-header'>SunSpear Services</h1></div><div className='sunspear-services-container'><p className='sunspear-services-text'>SunSpear’s core values are collaboration and community. To that end, we offer a range of consulting services to aid in the development of promising IPs and teams.</p></div>
               <div className='consulting-container'>
               <ScrollAnimation animateIn='fadeIn'>
                 <div className='consult-img-container' >

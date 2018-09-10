@@ -73,7 +73,8 @@ body {
     font-weight: 450;
     color: black;
     padding: 0px;
-    padding-right: 7.5%;
+    /*padding-right: 7.5%;*/
+    padding-right: 50px;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -302,9 +303,10 @@ img {
 
 .home-content-text {
     margin: 0px;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.22rem;
     line-height: 2.0rem;
     font-family: Roboto-Regular;
+    font-size: 1.3rem;
 }
 
 .no-js .home-main-content {
@@ -628,6 +630,80 @@ section .subtitle-half h5 {
 }
 
 /* ========================================================================
+   =================================IMMORTAL================================
+   ========================================================================
+*/
+
+.modal-open {
+    overflow: overlay!important;
+}
+.immortal-subscribe-container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.subscribe-button {
+    background-color: #002453;
+    color: #FFFFFF;
+}
+
+.subscribe-button-accepted-email {
+    color: #FFFFFF;
+    background-color: red;
+}
+
+.subscription-modal-header {
+    position: relative;
+    text-align: center;
+}
+
+.subscription-modal-title {
+    display:block;
+    margin:auto;
+    padding: 10px;
+    color: black;
+}
+
+.subscription-modal-button {
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 5px!important;
+}
+
+.subscription-modal-email-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.subscription-modal-email-input {
+    margin-right: 10px;
+    width: 100%;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.herlesh-faction-mobile-container {
+    background: url(./Assets/img/minified/splash-herlesh-faction.png) fixed center;
+    background-size: cover;
+}
+
+.txt-li {
+    font-size: 1.1em;
+}
+
+.immortal-text {
+    font-size: 1.1em;
+}
+
+.no-wrap-li {
+    white-space: nowrap;
+}
+
+/* ========================================================================
    =================================ABOUT US================================
    ======================================================================== 
 */
@@ -767,7 +843,14 @@ section .subtitle-half h5 {
 }
 
 img.react-parallax-bgimage {
-    height: auto!important;
+    max-height: 100%!important;
+    width: 100%!important;
+    /*height: auto!important;*/
+}
+
+img.react-parallax-talmetrabgimage {
+    max-height: 100%!important;
+    width: 100%!important;
 }
 
 .root-witch-mobile-container {
@@ -788,9 +871,17 @@ img.react-parallax-bgimage {
     font-size: 3.5rem;
 }
 
+.consulting-header-text {
+    font-weight: 200;
+}
+
 .consulting-hr {
     width: 90%;
     border-top: 3px solid rgba(0,0,0,.1);
+}
+
+.consulting-angle-icon {
+    color: #5cabc5;
 }
 
 .consulting-container {
@@ -809,7 +900,81 @@ img.react-parallax-bgimage {
 }
 
 .consulting-text-container {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid #999;
+    padding: 10px;*/
+}
+
+.consult-text-inner-container {
+    max-width: 70%;
+    border: 2px solid #999;
+    border-radius: 10px;
+    border-color: #b1bbcd;
+    height: 60%;
+    text-align: left;
+}
+
+.consult-text-header {
+    float: left;
+    padding: 0 5px;
+    margin: -27px 0 0 30px;
+    background: #fff;
+    color: #3e4a6a;
+}
+
+.consulting-text {
+    padding: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.consulting-sub-header-container {
+    margin: 50px;
+}
+
+.consulting-sub-header {
+    font-weight: 100;
+}
+
+.consulting-icons-outer-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consulting-icons-inner-container {
+    display: flex;
+}
+
+.sunspear-services-header-container {
+    padding-top: 30px;
+}
+
+.sunspear-services-text {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+.sunspear-services-header {
+    font-weight: 200;
+    color: #3e4a6a;
+}
+.sunspear-services-container {
+    border: solid;
+    border-radius: 12px;
+    border-color: #b1bbcd;
+    padding: 30px;
+    height: 200px;
+    max-width: 60%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
 }
 
 /* ========================================================================
@@ -1050,6 +1215,10 @@ ul {
     .consulting-header h1 {
         font-size: 2.5rem;
     }
+    .consulting-header-text {
+        /*font-family: "Roboto-Regular";*/
+        font-weight: 300;
+    }
     .consulting-hr {
         width: 90%;
         border-top: 3px solid rgba(0,0,0,.1);
@@ -1058,7 +1227,7 @@ ul {
         display: flex;
         /*flex-direction: column;*/
    
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         position: relative;
         overflow: hidden;
         padding-top: 30px;
@@ -1095,6 +1264,27 @@ ul {
     }
     img.react-parallax-bgimage {
         height: 100%!important;
+    }
+    .consulting-text-container {
+        margin-bottom: 100px;
+    }
+    .consult-text-header {
+        float: left;
+        /* padding: 0 5px; */
+        margin: -14px 0 0 12px;
+        background: #fff;
+        font-size: 1.4em;
+    }
+    .sunspear-services-container {
+        height: auto;
+        max-width: 70%;
+        margin-bottom: 50px;
+    }
+    .immortal-text {
+        /*font-size: 0.9em;*/
+    }
+    .no-wrap-li {
+        white-space: normal;
     }
 }
 

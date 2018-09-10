@@ -2,7 +2,9 @@ import React, {Component} from 'react'
 import Violetta from './../Assets/img/char-splash-violetta-transparent-small.png'
 import IanImage from './../Assets/img/team-portrait-ian.png'
 import RonImage from './../Assets/img/team-portrait-ron.jpg'
+import NickImage from './../Assets/img/team-portrait-nick.png'
 import AndyImage from './../Assets/img/team-portrait-andy.jpg'
+import JimImage from './../Assets/img/team-portrait-jim.png'
 import JosephImage from './../Assets/img/team-portrait-joseph.png'
 import ColterImage from './../Assets/img/team-portrait-colter.png'
 import DylanImage from './../Assets/img/team-portrait-dylan.png'
@@ -30,7 +32,9 @@ export default class About extends React.Component {
       showTravisLongText: false,
       showThomasLongText: false,
       showLucianoLongText: false,
-      showTheoLongText: false
+      showTheoLongText: false,
+      showNickLongText: false,
+      showJimLongText: false
     }
     this.toggleLongText = this
       .toggleLongText
@@ -100,6 +104,18 @@ export default class About extends React.Component {
           showTheoLongText: !this.state.showTheoLongText
         })
         break
+
+      case 'Nick':
+        this.setState({
+          showNickLongText: !this.state.showNickLongText
+        })
+        break
+
+      case 'Jim':
+        this.setState({
+          showJimLongText: !this.state.showJimLongText
+        })
+        break
     }
   }
 
@@ -155,23 +171,16 @@ export default class About extends React.Component {
                       className='team-description-container'
                     >
                       {this.state.showIanLongText
-                        ? <p>Ian Hunt’s passion with RTS stretches back to Brood War as a content creator.
-														In addition to games, Ian is driven by the potential of disruptive projects.
-														Seven years ago, Ian co-founded Authentic Cards, a Souvenir Distribution and
-														Manufacturing company where he served as the North American Sales and Marketing
-														Director. Ian combined game design passion with entrepreneurial experience to
-														found Anvil Studios, a project that would lead him to co-found SunSpear Games.
-														His leadership has attracted industry veterans into SunSpear Games, and reflects
-														Ian’s desire to challenge conventional wisdom in the entertainment industry.</p>
+                        ? <p>Ian Hunt joined with the design minds behind SunSpear Games in 2014 to establish a culture of ambition and excellence.
+                          He brought the entrepreneurial experience required to grow SunSpear from a small group of passionate designers to a multinational design and production company.
+                          Never satisfied with improvable systems, Ian assembled a team capable of developing disruptive esport titles; simultaneously utilizing SunSpear Games’ elite design talents to consult with companies around the world.
+                          This multi-focus has led to valuable strategic partnerships, strengthening SunSpear’s production pipelines and expanding its consultation and business networks.
+                        </p>
                         : <LinesEllipsis
-                          text='Ian Hunt’s passion with RTS stretches back to Brood War as a content creator.
-												In addition to games, Ian is driven by the potential of disruptive projects.
-												Seven years ago, Ian co-founded Authentic Cards, a Souvenir Distribution and
-												Manufacturing company where he served as the North American Sales and Marketing
-												Director. Ian combined game design passion with entrepreneurial experience to
-												found Anvil Studios, a project that would lead him to co-found SunSpear Games.
-												His leadership has attracted industry veterans into SunSpear Games, and reflects
-												Ian’s desire to challenge conventional wisdom in the entertainment industry.'
+                          text='Ian Hunt joined with the design minds behind SunSpear Games in 2014 to establish a culture of ambition and excellence.
+                          He brought the entrepreneurial experience required to grow SunSpear from a small group of passionate designers to a multinational design and production company.
+                          Never satisfied with improvable systems, Ian assembled a team capable of developing disruptive esport titles; simultaneously utilizing SunSpear Games’ elite design talents to consult with companies around the world.
+                          This multi-focus has led to valuable strategic partnerships, strengthening SunSpear’s production pipelines and expanding its consultation and business networks.'
                           maxLine='3'
                           ellipsis='...'
                           trimRight
@@ -286,6 +295,68 @@ export default class About extends React.Component {
 												in 2009, developing and publishing games on Facebook and mobile platform
 												including licensed IP from Atari, Putt-Putt, Freddi Fish, Pajama Sam and Spy
 												Fox.</p>
+                          : <LinesEllipsis
+                            text="In 1981, Andrew Hieke founded Terminal Software, a software publisher and
+												later Binary Design Limited, focusing on software development with three studios
+												in Manchester and Bristol, UK. In 1993, Hieke joined Microprose Limited as
+												Development Director and worked on numerous titles including Formula One Grand
+												Prix and X-Com. Spectrum Holobyte acquired Microprose in 1995 and Hieke was
+												promoted to Development Director at Spectrum’s head office in Alameda,
+												California, overseeing Star Trek, Top Gun and the Falcon brands.
+												As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
+												Francisco based development company that developed card games for the
+												Imagination Network and pioneering multiplayer online games, Ten-Six and
+												Vigilance for SEGA's Heat.Net.
+												In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
+												Corporation, the first US based development studio on the Nintendo campus.
+												In 2000, Hieke was General Manager and Senior Vice President of Atari’s
+												Humongous Entertainment studio, working with titles in the Backyard Sports
+												franchise, the number one sports brand for children. Andy founded Nimbus Games
+												in 2009, developing and publishing games on Facebook and mobile platform
+												including licensed IP from Atari, Putt-Putt, Freddi Fish, Pajama Sam and Spy
+												Fox."
+                            maxLine='3'
+                            ellipsis='...'
+                            trimRight
+                            basedOn='letters' />
+                        }
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Jim')}>
+                    <div className='team-detail-container'>
+                      <div className='portrait-container'>
+                        <img className='team-portrait rounded-circle' src={JimImage} />
+                      </div>
+                      <h4 className='team-name'>Jim</h4>
+                      <p className='team-title'>Technical Lead</p>
+                      <div
+                        className='team-description-container'
+                      >
+                        {this.state.showJimLongText
+                          ? <p>In 1981, Andrew Hieke founded Terminal Software, a software publisher and
+                            later Binary Design Limited, focusing on software development with three studios
+                            in Manchester and Bristol, UK. In 1993, Hieke joined Microprose Limited as
+                            Development Director and worked on numerous titles including Formula One Grand
+                            Prix and X-Com. Spectrum Holobyte acquired Microprose in 1995 and Hieke was
+                            promoted to Development Director at Spectrum’s head office in Alameda,
+                            California, overseeing Star Trek, Top Gun and the Falcon brands.
+                            <br /><br />
+                            As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
+                            Francisco based development company that developed card games for the
+                            Imagination Network and pioneering multiplayer online games, Ten-Six and
+                            Vigilance for SEGA's Heat.Net.
+                            <br /><br />
+                            In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
+                            Corporation, the first US based development studio on the Nintendo campus.
+                            <br /><br />
+                            In 2000, Hieke was General Manager and Senior Vice President of Atari’s
+                            Humongous Entertainment studio, working with titles in the Backyard Sports
+                            franchise, the number one sports brand for children. Andy founded Nimbus Games
+                            in 2009, developing and publishing games on Facebook and mobile platform
+                            including licensed IP from Atari, Putt-Putt, Freddi Fish, Pajama Sam and Spy
+                            Fox.</p>
                           : <LinesEllipsis
                             text="In 1981, Andrew Hieke founded Terminal Software, a software publisher and
 												later Binary Design Limited, focusing on software development with three studios
@@ -481,6 +552,28 @@ export default class About extends React.Component {
                             text='Ron Zaragoza is a game industry veteran and entrepreneur. He brings a unique perspective to SunSpear Games having fulfilled a broad range of roles over the last 12 years.
                             Ron started with SEGA of America, 1995, in Third Party Licensing where he worked directly with and supported over 50 game publishers. His creative background and a passion for gaming lead him to San Francisco where he led the creative team at Ubisoft. Therehe created digital art assets, packaging, marketing collateral, retail and tradeshow displays for several AAA titles. He was then hired by Sony Computer Entertainment America (now SIE) to manage its Creative Department, where he worked with counterparts at Sony Europe and Sony Japan to establish the global PlayStation brand Standards and Guidelines. To achieve this, in addition to the daily duties of art direction and managing designers, artists, and vendors, he collaborated with PlayStation Brand Marketing, Licensing and Legal.
                             Following his corporate tour of duty, he launched and co-founded several successful creative consulting agencies Blue Fog Design, Switchblade Creative Studios, LLC and Ron Zaragoza Creative working with clients such as EA, LucasArts, Sony Pictures, PlayStation, Capcom, Tecmo/KOEI, WalMart, Target, Toys-R-US, LeapFrog and GE Money.'
+                            maxLine='3'
+                            ellipsis='...'
+                            trimRight
+                            basedOn='letters' />
+                        }
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-md-6 margin-top-30 team-description-outer-container' onClick={() => this.toggleLongText('Nick')}>
+                    <div className='fluid-container'>
+                      <div className='portrait-container'>
+                        <img className='team-portrait rounded-circle' src={NickImage} />
+                      </div>
+                      <h4 className='team-name'>Nick Carpenter</h4>
+                      <p className='team-title'>Business Advisor</p>
+                      <div
+                        className='team-description-container'
+                      >
+                        {this.state.showNickLongText
+                          ? <p>Nick advises on several business functions. As a consultant, he leverages considerable experience in marketing, business analysis, and technology management to refine and implement operating strategies for clients. He earned an MBA from the University of Southern California in 2014. Prior to that, he spent five years managing critical enterprise technologies at JP Morgan Chase.</p>
+                          : <LinesEllipsis
+                            text='Nick advises on several business functions. As a consultant, he leverages considerable experience in marketing, business analysis, and technology management to refine and implement operating strategies for clients. He earned an MBA from the University of Southern California in 2014. Prior to that, he spent five years managing critical enterprise technologies at JP Morgan Chase.'
                             maxLine='3'
                             ellipsis='...'
                             trimRight

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import HeaderImage from "./../Assets/img/minified/header-bg-scaled-min.jpg";
+//import HeaderImage from "./../Assets/img/minified/header-bg-scaled-min.jpg";
+import HeaderImage from './../Assets/img/splash-talmetra-celebrate.jpg'
 //import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "./../App.css";
 import "./../Assets/js/scroll.js";
@@ -39,9 +40,9 @@ export default class Header extends Component {
           ? <Parallax
               bgImage={HeaderImage}
               strength={550}
-              className="anti-shadow react-parallax-bgimage-header"
+              className="anti-shadow react-parallax-bgimage-header react-parallax-talmetrabgimage"
               style={{height: 'auto'}}>
-              <div className="anti-shadow react-parallax-bgimage">
+              <div className="anti-shadow ">
                 <div className="sections set-zindex-top">
                   <div className="fluid-container set-zindex-top">
                     <div className="set-zindex-top">
