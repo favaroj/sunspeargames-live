@@ -56,7 +56,7 @@ export default class ContactForm extends React.Component {
                     <div className='contact-details'>
                       <img id='contact-image' src={DylanImage} className='padding20' />
                       <h4>Dylan Kahn</h4>
-                      <h6>Creative Lead</h6>
+                      <h6>Creative Lead / Director of Consulting</h6>
                       <p>+1 406 465 3449</p>
                       <p>dkahn@sunspeargames.com</p>
                     </div>

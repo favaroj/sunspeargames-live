@@ -60,27 +60,24 @@ export default class HerleshFaction extends Component {
               </div>
             </div>*/}
           </Parallax>
-          : <div className='root-witch-mobile-container' style={{background: HerleshFactionImage}} >
+          : <div className='herlesh-faction-mobile-container' style={{background: HerleshFactionImage}} >
             <div className='anti-shadow'>
               <div className='sections set-zindex-top'>
-                <div className='container set-zindex-top'>
+                {/*<div className='container set-zindex-top'>
                   <div className='set-zindex-top'>
                     <div className='col-md-12'>
                       <div className='home-content'>
-                        {/* <ScrollAnimation animateIn="fadeIn"> */}
                         { this.props.h2TextShow
                           ? <h2 className='set-zindex-top' id='h2-responsive'>{this.props.h2Text}</h2>
                           : null
                         }
-
                         <h1 className='set-zindex-top' id='h1-responsive'>
                           {this.props.h1Text}
                         </h1>
-                        {/* </ScrollAnimation> */}
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>}

@@ -117,18 +117,15 @@ class App extends Component {
                 The SunSpear Team uses its global talent and bold design to create a multiplayer experience like no other. Join us:
                 <strong> become IMMORTAL.</strong>
               </p>
-              <div className='immortal-subscribe-container'>
+              {/*<div className='immortal-subscribe-container'>
                 <a className='btn-default' id='formSubmitBtn' onClick={this.handleShowSubscriptionModal}>Subscribe to annoucements</a>
               </div>
               <Modal isOpen={this.state.showSubscriptionModal} toggle={this.handleShowSubscriptionModal} className={this.props.className} centered>
-
                 <div className='subscription-modal-header'>
                   <h4 className='subscription-modal-title'>IMMORTAL Announcements</h4>
-
                   <button type='button' className='close subscription-modal-button' aria-label='Close' onClick={() => this.setState({showSubscriptionModal: !this.state.showSubscriptionModal})}>
-                    <Icon icon={close} size={30} />{/* <span aria-hidden="true">×</span> */}
+                    <Icon icon={close} size={30} />
                   </button>
-
                 </div>
                 <ModalBody>
                   Add your email to the mailing list for major IMMORTAL announcements.
@@ -137,11 +134,7 @@ class App extends Component {
                     <Button color='#002453' className={this.state.subscribeBtnClass} onClick={this.handleSubscribePress}>Subscribe</Button>
                   </div>
                 </ModalBody>
-                {/* <ModalFooter>
-                  {' '}
-                  <Button color="secondary" onClick={this.handleShowSubscriptionModal}>Cancel</Button>
-                </ModalFooter> */}
-              </Modal>
+              </Modal>*/}
             </div>
 
           </div>
@@ -252,9 +245,9 @@ class App extends Component {
               <img src={Bloodbound} className='imgflip' id='bloodbound-img' alt='bloodbound' />
             </div>
           </div>
-          <div className='immortal-subscribe-container'>
+          {/*<div className='immortal-subscribe-container'>
             <a className='btn-default' id='formSubmitBtn' onClick={this.handleShowSubscriptionModal}>Subscribe to annoucements</a>
-          </div>
+          </div>*/}
         </div>
 
         <Footer />

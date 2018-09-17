@@ -133,7 +133,7 @@ body {
     max-height: 60%!important;
 }
 .header-mobile-container {
-    background: url(./Assets/img/minified/header-bg-scaled-min.jpg) fixed center;
+    background: url(./Assets/img/splash-talmetra-celebrate.jpg) fixed center;
     background-size: cover;
 }
 
@@ -669,6 +669,11 @@ section .subtitle-half h5 {
     top:0;
     right:0;
     padding: 5px!important;
+    outline: none;
+}
+
+.subscription-modal-button:hover {
+    color: red!important;
 }
 
 .subscription-modal-email-container{
@@ -744,8 +749,12 @@ section .subtitle-half h5 {
 }
 
 .team-description-outer-container:hover {
-    background-color: white;
+    background-color: white!important;
     cursor: pointer;
+}
+
+.team-description-container:hover {
+    background-color: white;
 }
 
 /*.team-description-container:hover {
@@ -813,6 +822,7 @@ section .subtitle-half h5 {
 	width:370px;
     margin: 20px auto;
     margin-bottom: 100px;
+    display: flex;
 }
 
 .team-portrait{
@@ -904,8 +914,21 @@ img.react-parallax-talmetrabgimage {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    height: 290px;
     /*border: 2px solid #999;
     padding: 10px;*/
+}
+
+.consult-text-inner-container-default {
+    max-width: 70%;
+    border: 2px solid #999;
+    border-radius: 10px;
+    border-color: #b1bbcd;
+    height: 60%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #808080;
 }
 
 .consult-text-inner-container {
@@ -927,12 +950,18 @@ img.react-parallax-talmetrabgimage {
 
 .consulting-text {
     padding: 30px;
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+
+}
+
+.consulting-text-align-container {
+    display: inline-flex;
 }
 
 .consulting-sub-header-container {
     margin: 50px;
+    margin-top: 105px;
 }
 
 .consulting-sub-header {
@@ -973,7 +1002,7 @@ img.react-parallax-talmetrabgimage {
     display: flex;
     margin: auto;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 120px;
     margin-bottom: 150px;
 }
 
@@ -1232,6 +1261,9 @@ ul {
         overflow: hidden;
         padding-top: 30px;
     }
+    .consulting-sub-header-container {
+        margin-top: 50px;
+    }
     #consult-img {
         width: 6.5em;
         margin-bottom: 10px;
@@ -1239,6 +1271,39 @@ ul {
     }
     .consult-img-container {
         padding: 5px;
+    }
+    .consult-text-inner-container-default {
+        align-items: flex-start;
+    }
+    .consult-text-inner-container {
+        max-width: 75%;
+        height: 420px;
+    }
+    .consulting-text-container {
+        margin-bottom: 0px;
+        height: 540px;
+    }
+    .consulting-text {
+        font-size: inherit;
+        line-height: inherit;
+        padding-bottom: 50px;
+    }
+    .consult-text-header {
+        float: left;
+        /* padding: 0 5px; */
+        margin: -14px 0 0 12px;
+        background: #fff;
+        font-size: 1.4em;
+    }
+    .sunspear-services-container {
+        height: auto;
+        max-width: 70%;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    .sunspear-services-text {
+        font-size: inherit;
+        line-height: inherit;
     }
     .ml-auto, .mx-auto {
         padding-right: 0px;
@@ -1265,21 +1330,6 @@ ul {
     img.react-parallax-bgimage {
         height: 100%!important;
     }
-    .consulting-text-container {
-        margin-bottom: 100px;
-    }
-    .consult-text-header {
-        float: left;
-        /* padding: 0 5px; */
-        margin: -14px 0 0 12px;
-        background: #fff;
-        font-size: 1.4em;
-    }
-    .sunspear-services-container {
-        height: auto;
-        max-width: 70%;
-        margin-bottom: 50px;
-    }
     .immortal-text {
         /*font-size: 0.9em;*/
     }
@@ -1299,6 +1349,12 @@ ul {
         width: 18.5em!important;
         height: 18.5em!important;
     }
+    .team-portrait {
+        width: auto!important;
+    }
+    .consulting-text-container {
+        height: 390px
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1306,6 +1362,19 @@ ul {
     width: 18.5em!important;
     height: 18.5em!important;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    .team-portrait {
+        width: 320px;
+    }
+    .portrait-container {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .consulting-text-container {
+        height: 490px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
