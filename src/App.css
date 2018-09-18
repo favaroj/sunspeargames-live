@@ -705,7 +705,7 @@ section .subtitle-half h5 {
 }
 
 .no-wrap-li {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 /* ========================================================================
@@ -910,7 +910,7 @@ img.react-parallax-talmetrabgimage {
 }
 
 .consulting-text-container {
-    margin-bottom: 200px;
+    /*margin-bottom: 200px;*/
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -1334,7 +1334,7 @@ ul {
         /*font-size: 0.9em;*/
     }
     .no-wrap-li {
-        white-space: normal;
+        /*white-space: normal;*/
     }
 }
 
@@ -1353,15 +1353,15 @@ ul {
         width: auto!important;
     }
     .consulting-text-container {
-        height: 390px
+        height: 290px
     }
 }
 
 @media only screen and (min-width: 768px) {
-  .dot-div {
-    width: 18.5em!important;
-    height: 18.5em!important;
-  }
+    .dot-div {
+        height: 13em;
+        width: 13em;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px){

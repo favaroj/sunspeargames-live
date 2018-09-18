@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2ce552b-315c-43e8-884f-0883c2ed8c76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/HerleshFaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/HerleshFaction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Consulting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Consulting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/Immortal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Immortal.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,20 +56,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="824" column="18" selection-start-line="824" selection-start-column="18" selection-end-line="824" selection-end-column="18" />
+            <state relative-caret-position="386">
+              <caret line="912" column="27" selection-start-line="912" selection-start-column="4" selection-end-line="912" selection-end-column="29" />
+              <folding>
+                <element signature="e#22152#25561#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="About.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="About.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="357" column="13" lean-forward="true" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+            <state relative-caret-position="555">
+              <caret line="362" column="19" selection-start-line="362" selection-start-column="19" selection-end-line="362" selection-end-column="19" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
                 <element signature="e#2310#3602#0" />
@@ -121,9 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>consult-text</find>
-      <find>font-family</find>
-      <find>consulting</find>
       <find>.consulting-header-text</find>
       <find>#nav-item</find>
       <find>Icon</find>
@@ -151,6 +145,9 @@
       <find>team-description-outer-container</find>
       <find>handleShow</find>
       <find>portrait</find>
+      <find>Jim</find>
+      <find>white-space</find>
+      <find>consulting-text-container</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/Routes/Immortal.js" />
         <option value="$PROJECT_DIR$/src/Routes/Consulting.js" />
         <option value="$PROJECT_DIR$/src/Components/HerleshFaction.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Routes/About.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
       </list>
     </option>
   </component>
@@ -191,7 +188,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="177" />
     <option name="y" value="196" />
     <option name="width" value="1260" />
@@ -329,12 +326,12 @@
       <workItem from="1534044487269" duration="3692000" />
       <workItem from="1534475443808" duration="23462000" />
       <workItem from="1536534880394" duration="4875000" />
-      <workItem from="1537036684165" duration="24663000" />
+      <workItem from="1537036684165" duration="28920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155641000" />
+    <option name="totallyTimeSpent" value="159898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -350,10 +347,10 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32827586" />
-      <window_info anchor="right" id="Terminal" order="9" visible="true" weight="0.15494792" />
+      <window_info active="true" anchor="right" id="Terminal" order="9" visible="true" weight="0.29622397" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.23046875" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.23046875" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.5007728" side_tool="true" weight="0.1636953" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -771,17 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="824" column="18" selection-start-line="824" selection-start-column="18" selection-end-line="824" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Routes/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="357" column="13" lean-forward="true" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+        <state relative-caret-position="555">
+          <caret line="362" column="19" selection-start-line="362" selection-start-column="19" selection-end-line="362" selection-end-column="19" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#2310#3602#0" />
@@ -811,6 +801,16 @@
             <element signature="e#6994#7130#0" />
             <element signature="e#7260#8207#0" />
             <element signature="e#8271#9640#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="912" column="27" selection-start-line="912" selection-start-column="4" selection-end-line="912" selection-end-column="29" />
+          <folding>
+            <element signature="e#22152#25561#0" />
           </folding>
         </state>
       </provider>
