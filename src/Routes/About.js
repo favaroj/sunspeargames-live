@@ -85,7 +85,7 @@ export default class About extends React.Component {
         this.setState({
           showDescriptionModal: true,
           descriptionModalImage: RonImage,
-          descriptionModalName: 'Ron Zargoza',
+          descriptionModalName: 'Ron Zaragoza',
           descriptionModalTitle: 'Business Development',
           descriptionModalText: <p>Ron Zaragoza is a game industry veteran and entrepreneur. He brings a unique
             perspective to SunSpear Games having fulfilled a broad range of roles over the
@@ -210,7 +210,7 @@ export default class About extends React.Component {
         this.setState({
           showDescriptionModal: true,
           descriptionModalImage: DylanImage,
-          descriptionModalName: 'Dylan Kanh',
+          descriptionModalName: 'Dylan Kahn',
           descriptionModalTitle: 'Creative Lead / Director of Consulting',
           descriptionModalText: <p>Dylan Kahn is a Creative Lead with six years of direct experience in
             esports design. Dylan founded and lead development in the OneGoal project to maximise
@@ -798,7 +798,7 @@ export default class About extends React.Component {
                       <div className='portrait-container'>
                         <img className='team-portrait rounded-circle' src={RonImage} />
                       </div>
-                      <h4 className='team-name'>Ron Zargoza</h4>
+                      <h4 className='team-name'>Ron Zaragoza</h4>
                       <p className='team-title'>Business Development</p>
                       <div
                         className='team-description-container'
