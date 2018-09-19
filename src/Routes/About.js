@@ -350,10 +350,22 @@ export default class About extends React.Component {
           this.setState({selectedDescription: descriptionPosition})
         }
         this.setState({
+          showDescriptionModal: true,
           descriptionModalImage: JimImage,
-          descriptionModalName: 'Jim',
+          descriptionModalName: 'Jim Merrill',
           descriptionModalTitle: 'Technical Lead',
-          descriptionModalText: <p>Jim Placeholder</p>
+          descriptionModalText: <p>Jim Merrill is a software engineer and the technical
+            lead on the Immortal project. After graduating from the University of Puget
+            Sound with a BA in Comparative Politics and Government, Jim followed the
+            obvious path: he entered the tech industry. He got his start in QA at Riot
+            Games and started teaching himself how to program. Within a few years, he
+            had transitioned into being a full-time software engineer. During his time
+            at Riot he served as the technical lead to a team of junior technical QA
+            developers, designed the test automation framework used to test League of
+            Legends, and did work on both the network layer and the build system of the
+            game. Jim joined Sunspear in March of 2018, bringing with him a passion for
+            technical quality and years of experience in delivering updates to a game on
+            a fast cadence.</p>
         })
         break
     }
@@ -519,7 +531,46 @@ export default class About extends React.Component {
                     </div>
                   </div>
 
-                  <div className='col-md-6 margin-top-30 team-description-outer-container' style={{backgroundColor: this.setDescriptionBackgroundColor(4)}} onClick={() => this.toggleLongText('Andy', 4)}>
+                  <div className='col-md-6 margin-top-30 team-description-outer-container' style={{backgroundColor: this.setDescriptionBackgroundColor(4)}} onClick={() => this.toggleLongText('Jim', 4)}>
+                    <div className='team-detail-container'>
+                      <div className='portrait-container'>
+                        <img className='team-portrait rounded-circle' src={JimImage} />
+                      </div>
+                      <h4 className='team-name'>Jim Merrill</h4>
+                      <p className='team-title'>Technical Lead</p>
+                      <div className='team-description-container'>
+                        {this.state.showJimLongText
+                          ? <p>Jim Merrill is a software engineer and the technical lead on the Immortal project. After
+                            graduating from the University of Puget Sound with a BA in Comparative Politics and
+                            Government, Jim followed the obvious path: he entered the tech industry. He got his start
+                            in QA at Riot Games and started teaching himself how to program. Within a few years, he had
+                            transitioned into being a full-time software engineer. During his time at Riot he served as
+                            the technical lead to a team of junior technical QA developers, designed the test automation
+                            framework used to test League of Legends, and did work on both the network layer and the
+                            build system of the game. Jim joined Sunspear in March of 2018, bringing with him a passion
+                            for technical quality and years of experience in delivering updates to a game on a fast
+                            cadence.</p>
+                          : <LinesEllipsis
+                            text="Jim Merrill is a software engineer and the technical lead on the Immortal
+                            project. After graduating from the University of Puget Sound with a BA in Comparative
+                            Politics and Government, Jim followed the obvious path: he entered the tech industry. He
+                            got his start in QA at Riot Games and started teaching himself how to program. Within a
+                            few years, he had transitioned into being a full-time software engineer. During his time
+                            at Riot he served as the technical lead to a team of junior technical QA developers,
+                            designed the test automation framework used to test League of Legends, and did work on
+                            both the network layer and the build system of the game. Jim joined Sunspear in March of
+                            2018, bringing with him a passion for technical quality and years of experience in
+                            delivering updates to a game on a fast cadence."
+                            maxLine='3'
+                            ellipsis='...'
+                            trimRight
+                            basedOn='letters' />
+                        }
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='col-md-6 margin-top-30 team-description-outer-container' style={{backgroundColor: this.setDescriptionBackgroundColor(5)}} onClick={() => this.toggleLongText('Andy', 5)}>
                     <div className='team-detail-container'>
                       <div className='portrait-container'>
                         <img className='team-portrait rounded-circle' src={AndyImage} />
@@ -581,67 +632,6 @@ export default class About extends React.Component {
                     </div>
                   </div>
 
-                  {/*<div className='col-md-6 margin-top-30 team-description-outer-container' style={{backgroundColor: this.setDescriptionBackgroundColor(5)}} onClick={() => this.toggleLongText('Jim', 5)}>
-                    <div className='team-detail-container'>
-                      <div className='portrait-container'>
-                        <img className='team-portrait rounded-circle' src={JimImage} />
-                      </div>
-                      <h4 className='team-name'>Jim</h4>
-                      <p className='team-title'>Technical Lead</p>
-                      <div
-                        className='team-description-container'
-                      >
-                        {this.state.showJimLongText
-                          ? <p>In 1981, Andrew Hieke founded Terminal Software, a software publisher and
-                            later Binary Design Limited, focusing on software development with three studios
-                            in Manchester and Bristol, UK. In 1993, Hieke joined Microprose Limited as
-                            Development Director and worked on numerous titles including Formula One Grand
-                            Prix and X-Com. Spectrum Holobyte acquired Microprose in 1995 and Hieke was
-                            promoted to Development Director at Spectrum’s head office in Alameda,
-                            California, overseeing Star Trek, Top Gun and the Falcon brands.
-                            <br /><br />
-                            As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
-                            Francisco based development company that developed card games for the
-                            Imagination Network and pioneering multiplayer online games, Ten-Six and
-                            Vigilance for SEGA's Heat.Net.
-                            <br /><br />
-                            In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
-                            Corporation, the first US based development studio on the Nintendo campus.
-                            <br /><br />
-                            In 2000, Hieke was General Manager and Senior Vice President of Atari’s
-                            Humongous Entertainment studio, working with titles in the Backyard Sports
-                            franchise, the number one sports brand for children. Andy founded Nimbus Games
-                            in 2009, developing and publishing games on Facebook and mobile platform
-                            including licensed IP from Atari, Putt-Putt, Freddi Fish, Pajama Sam and Spy
-                            Fox.</p>
-                          : <LinesEllipsis
-                            text="In 1981, Andrew Hieke founded Terminal Software, a software publisher and
-												later Binary Design Limited, focusing on software development with three studios
-												in Manchester and Bristol, UK. In 1993, Hieke joined Microprose Limited as
-												Development Director and worked on numerous titles including Formula One Grand
-												Prix and X-Com. Spectrum Holobyte acquired Microprose in 1995 and Hieke was
-												promoted to Development Director at Spectrum’s head office in Alameda,
-												California, overseeing Star Trek, Top Gun and the Falcon brands.
-												As President of Production, Hieke co-founded PostLinear Ent ertainment, a San
-												Francisco based development company that developed card games for the
-												Imagination Network and pioneering multiplayer online games, Ten-Six and
-												Vigilance for SEGA's Heat.Net.
-												In 1998, Hieke co-founded the Redmond-based Nintendo Software Technology
-												Corporation, the first US based development studio on the Nintendo campus.
-												In 2000, Hieke was General Manager and Senior Vice President of Atari’s
-												Humongous Entertainment studio, working with titles in the Backyard Sports
-												franchise, the number one sports brand for children. Andy founded Nimbus Games
-												in 2009, developing and publishing games on Facebook and mobile platform
-												including licensed IP from Atari, Putt-Putt, Freddi Fish, Pajama Sam and Spy
-												Fox."
-                            maxLine='3'
-                            ellipsis='...'
-                            trimRight
-                            basedOn='letters' />
-                        }
-                      </div>
-                    </div>
-                  </div>*/}
                 </div>
 
                 <div className='heading-content text-center team-heading'>
