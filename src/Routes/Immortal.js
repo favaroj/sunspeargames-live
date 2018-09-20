@@ -104,7 +104,7 @@ class App extends Component {
 									No matter what the battlefield throws at you, someone has your back.
                 </li>
                 <li className='txt-li'>
-                  <strong>Accessibile: </strong>
+                  <strong>Accessible: </strong>
 									Mastery is a path, and starting has never been easier.
                 </li>
                 <li className='txt-li'>
@@ -200,7 +200,7 @@ class App extends Component {
                   Innovative controls and UI features put the power in the hands of the player.
                 </li>
                 <li className='txt-li'>
-                  <strong>Sieze your Victory: </strong>
+                  <strong>Seize your Victory: </strong>
 									Reward yourself and your allies with the spoils of war. Create and customize
 									armor and relics that display your power.
                 </li>
