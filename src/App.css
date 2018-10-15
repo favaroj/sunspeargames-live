@@ -696,6 +696,11 @@ section .subtitle-half h5 {
     background-size: cover;
 }
 
+.zenithborn-faction-mobile-container {
+    background: url(./Assets/img/minified/splash-zenithborn.jpg) fixed center;
+    background-size: cover;
+}
+
 .txt-li {
     font-size: 1.1em;
 }

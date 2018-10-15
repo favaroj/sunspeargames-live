@@ -8,7 +8,7 @@ import IanImage from './../Assets/img/minified/ian2.png'
 import DylanImage from './../Assets/img/minified/dylan.png'
 import Header from './../Components/Header'
 import SplashRootWitch from './../Components/SplashRootWitch'
-import HerleshFaction from './../Components/HerleshFaction'
+import ZenithBornFaction from './../Components/ZenithbornFaction'
 import Icon from 'react-icons-kit'
 import {close} from 'react-icons-kit/fa/close'
 import Footer from './../Components/Footer'
@@ -209,7 +209,7 @@ class App extends Component {
           </div>
         </div>
 
-        <HerleshFaction />
+        <ZenithBornFaction />
 
         <div id='about' className='container-fluid sections3 darkback'>
           <div className='row'>
